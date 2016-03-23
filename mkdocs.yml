@@ -1,0 +1,10 @@
+site_name: mbed Release Documents
+
+docs_dir: Docs
+
+pages:
+- ['index.md','mbed Release Documents']
+- ['15_11/mbed_OS/Release_Note.md', '15.11 Technology Preview', 'mbed OS release note']
+- ['15_11/mbed_OS/Known_Issues.md', '15.11 Technology Preview', 'mbed OS known issues list']
+- ['15_11/mbed_Client/Release_Note.md', '15.11 Technology Preview', 'mbed Client release note']
+- ['15_11/mbed_Client/Known_Issues.md', '15.11 Technology Preview', 'mbed Client known issues list']
