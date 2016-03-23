@@ -4,6 +4,10 @@ docs_dir: Docs
 
 pages:
 - ['index.md','mbed Release Documents']
+- ['16_03/mbed_OS/Release_Note.md', '16.03', 'mbed OS release note']
+- ['16_03/mbed_OS/Known_Issues.md', '16.03', 'mbed OS known issues list']
+- ['16_03/mbed_Client/Release_Note.md', '16.03', 'mbed Client release note']
+- ['16_03/mbed_Client/Known_Issues.md', '16.03', 'mbed Client known issues list']
 - ['15_11/mbed_OS/Release_Note.md', '15.11 Technology Preview', 'mbed OS release note']
 - ['15_11/mbed_OS/Known_Issues.md', '15.11 Technology Preview', 'mbed OS known issues list']
 - ['15_11/mbed_Client/Release_Note.md', '15.11 Technology Preview', 'mbed Client release note']
