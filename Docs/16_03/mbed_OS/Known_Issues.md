@@ -17,7 +17,7 @@ For further information regarding this release please refer to the release notes
 Other tools such as [yotta](https://github.com/ARMmbed/yotta) and [Greentea](https://github.com/ARMmbed/greentea) also have their own lists, which can be viewed in their public GitHub repositories.
 
 # Known issues
-## Device disconnects or crashes after 50 hours.
+## Device disconnects or crashes after 50 hours
 * **Description**:
 After 50 hours online with mbed Client, device stops responding.
 * **Workaround**: No workarounds.
