@@ -44,7 +44,6 @@ This release includes version 1.3.0 of the mbed-drivers API. The mbed-drivers AP
 
 From this point on, we will follow the familiar versioning rules described by [semver](http://semver.org) when publishing updates to ``mbed-drivers``. If we make a breaking change to the API, we will increase the major revision number. We will also aim to provide backwards compatibility by developing different versions of the API in different C++ namespaces.
 
-
 ### Changes since last release
 
 * Added support for gcov output.
@@ -186,7 +185,7 @@ The [mbed-mesh-api](https://github.com/ARMmbed/mbed-mesh-api), which allows usin
 
 The mbed mesh networking stack includes an implementation of the Thread 1.0 specification. It is experimental, because the Thread specification is still under development. ARM intends to provide full production support for Thread following completion of the Thread standard. 
 
-## Sockets: 
+## Sockets
 
 ### Changes since last release
 
@@ -210,7 +209,6 @@ Disabled MD5 handshake signatures in TLS 1.2 by default, to prevent the SLOTH at
 
 Porting uVisor to a whole range of devices has [been greatly simplified since the last release](https://docs.mbed.com/docs/uvisor-and-uvisor-lib-documentation/en/latest/Porting/): no target-specific headers or code-edits are required any more. Debugging is now delegated to unprivileged debug drivers. We also added box identity APIs, so boxes can identify API callers across security boundaries to impose caller-specific API restrictions.
 
- 
 #### Changes since last release
 
 * Improved build system:
@@ -310,9 +308,7 @@ Please note that mbed-ls does not support OS X El Capitan.
 * Enabled CoAP Blockwise payload handling by client. See  [https://tools.ietf.org/html/draft-ietf-core-block-08#section-2](https://tools.ietf.org/html/draft-ietf-core-block-08#section-2).
 * Added support for handling observation cancellation through a RESET message from Device Connector Server.
 * Disabled Bootstrap API functionality from source code.
- 
 
- 
 # Known issues 
 
 The known issues list for this release is available as [a separate document](Known_Issues.md)
@@ -325,7 +321,6 @@ We prefer that you access and collaborate with mbed OS online. However, the rele
 
 To get started with mbed OS, please visit our [Getting Started Guide](http://docs.mbed.org/docs/getting-started-mbed-os/en/latest/), which describes the tools you need to use mbed OS, how to build and run your [first mbed OS program](https://docs.mbed.com/docs/getting-started-mbed-os/en/latest/FirstProjectmbedOS/) and where to find [a few more examples](https://docs.mbed.com/docs/getting-started-mbed-os/en/latest/GetTheCode/). 
 
-  
 # Module versions in this release 
  
 We use [semantic versioning](http://semver.org) for the modules in mbed OS. This means that you can tell from the version number of a module what’s changed: an increase in the major version indicates a backwards incompatible change, and the minor and patch versions are used for backwards compatible features and bug-fixes respectively. When you use yotta to build an application that depends on a module, you can specify which sort of updates you will allow updates to. For more information on how yotta uses version specifications, see the [yotta documentation](http://yottadocs.mbed.com/reference/module.html#dependencies). 
