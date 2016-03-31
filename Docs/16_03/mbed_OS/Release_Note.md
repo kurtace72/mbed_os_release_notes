@@ -89,10 +89,10 @@ The mbed HAL APIs are subject to change. The current HAL APIs are an evolution o
 
 * Clarified doxygen and generic documentation.
 * K64F: 
-  * Fixed bug related to SPI transfers.
-  * Removed console specific code from mbed-hal-ksdk-mcu.
-  * Use the baud rate defined in yotta config.
-  * Use CRC to generate an Ethernet MAC address.
+    * Fixed bug related to SPI transfers.
+    * Removed console specific code from mbed-hal-ksdk-mcu.
+    * Use the baud rate defined in yotta config.
+    * Use CRC to generate an Ethernet MAC address.
 
 ## minar 
 
