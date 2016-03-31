@@ -73,26 +73,26 @@ Other tools such as [yotta](https://github.com/ARMmbed/yotta) and [Greentea](htt
 
 ## 6LoWPAN socket adaptation layer has incomplete C++ API
 * **Description**: The following mbed C++ Socket API methods are not implemented in `sal-iface-6lowpan`:
-  * `socket_accept`
-  * `socket_start_listen`
-  * `socket_stop_listen`
-  * `send_to` (for TCP sockets)
-  * `recv_from` (for TCP sockets)
-  * `set_option`
-  * `get_option`
-  * `is_bound`
-  * `get_local_addr`
-  * `get_remote_addr`
-  * `get_local_port`
-  * `get_remote_port`
+    * `socket_accept`
+    * `socket_start_listen`
+    * `socket_stop_listen`
+    * `send_to` (for TCP sockets)
+    * `recv_from` (for TCP sockets)
+    * `set_option`
+    * `get_option`
+    * `is_bound`
+    * `get_local_addr`
+    * `get_remote_addr`
+    * `get_local_port`
+    * `get_remote_port`
 * **Workaround**: None
 * **Reported Issue**: [https://github.com/ARMmbed/sal-iface-6lowpan/issues/11](https://github.com/ARMmbed/sal-iface-6lowpan/issues/11)
 * **Priority**: Minor
 
 ## Mesh network is insecure
 * **Description**: Mesh network is insecure:
-  * `mbed-mesh-api` does not provide an API for changing the security settings.
-  * gateway binary releases are currently operating in insecure mode.
+    * `mbed-mesh-api` does not provide an API for changing the security settings.
+    * gateway binary releases are currently operating in insecure mode.
 * **Workaround**: None
 * **Reported Issue**: ARM internal reference ONME-2076
 * **Priority**: Minor
