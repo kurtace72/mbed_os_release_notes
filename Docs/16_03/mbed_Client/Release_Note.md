@@ -15,16 +15,16 @@ To get started with mbed Client, please visit our [getting started guide](https:
 ## New APIs and functions
 
 * New APIs:
-* Setting the max-age of a resource value. See [https://tools.ietf.org/html/draft-ietf-core-coap-09#section-5.10.6](https://tools.ietf.org/html/draft-ietf-core-coap-09#section-5.10.6).
-* Omitting registered resources' URI path from the registration message's body (which is sent from the client to the server). 
-* Allowing the client to send a delayed response to POST requests. See [https://tools.ietf.org/html/draft-ietf-core-coap-09#section-5.2.2](https://tools.ietf.org/html/draft-ietf-core-coap-09#section-5.2.2).
-* Getting Object and Object Instance information from Resource Object.
+ * Setting the max-age of a resource value. See [https://tools.ietf.org/html/draft-ietf-core-coap-09#section-5.10.6](https://tools.ietf.org/html/draft-ietf-core-coap-09#section-5.10.6).
+ * Omitting registered resources' URI path from the registration message's body (which is sent from the client to the server). 
+ * Allowing the client to send a delayed response to POST requests. See [https://tools.ietf.org/html/draft-ietf-core-coap-09#section-5.2.2](https://tools.ietf.org/html/draft-ietf-core-coap-09#section-5.2.2).
+ * Getting Object and Object Instance information from Resource Object.
 * Added a new class for handling arguments received from POST method for Resource. 
 * Enabled CoAP Blockwise payload handling by client. See  [https://tools.ietf.org/html/draft-ietf-core-block-08#section-2](https://tools.ietf.org/html/draft-ietf-core-block-08#section-2).
 * Added support for handling observation cancellation through a RESET message from Device Connector Server.
 * Disabled Bootstrap API functionality from source code.
 
- ## Bug fixes
+## Bug fixes
  
 1. Multiple fixes related to Object, Object Instance and Resource Observation.
 2. Multiple fixes related to Write Attributes parameter handling for Object, Object Instance and Resource.
@@ -35,7 +35,7 @@ To get started with mbed Client, please visit our [getting started guide](https:
 7. Memory handling in the ``m2mstring`` class.
 8. Fix for preventing the client from sending multiple confirmable messages on mbed OS.
  
- # Modules versions
+# Modules versions
  
 mbed Client is available as part of mbed OS or as a standalone component for Ubuntu-like Linux distributions.
 
