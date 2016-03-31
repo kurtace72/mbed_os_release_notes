@@ -333,9 +333,8 @@ We use [semantic versioning](http://semver.org) for the modules in mbed OS. This
 This release comprises the following yotta modules and their versions: 
 
 
-+--------------------------------+----------+
 | Module                         | Version  |
-+--------------------------------+----------+
+|--------------------------------|----------|
 | async-util                     |  0.0.2   |
 | atmel-rf-driver                |  2.0.3   |
 | ble                            |  2.5.2   |
@@ -422,4 +421,4 @@ This release comprises the following yotta modules and their versions:
 | utest                          |  1.11.0  |
 | uvisor-helloworld              |  0.8.0   |
 | uvisor-lib                     |  2.2.1   |
-+--------------------------------+----------+
+
