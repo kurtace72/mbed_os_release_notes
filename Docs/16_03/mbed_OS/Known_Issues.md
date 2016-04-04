@@ -115,18 +115,18 @@ Other tools such as [yotta](https://github.com/ARMmbed/yotta) and [Greentea](htt
 * **Reported Issue**: [https://github.com/ARMmbed/target-kinetis-k64-gcc/issues/4](https://github.com/ARMmbed/target-kinetis-k64-gcc/issues/4)
 * **Priority**: Critical
 
-## uVisor halts applications compiled in debug mode in case a debugger is not connected.
+## uVisor halts applications compiled in debug mode in case a debugger is not connected
 
 * **Description**: The uVisor uses semihosting to print debug messages, which blocks the application execution until a debugger is connected. Some of these messages are printed even when uVisor is disabled, which causes the issue. Release builds are not affected.
 * **Workaround**: The bug has already been [fixed](https://github.com/ARMmbed/uvisor/commit/6b5990d8148aeeef508283b151462b67cb9bd306) in the publicly available [uVisor GitHub repository](https://github.com/ARMmbed/uvisor/).
 
-There are 3 different ways to fix or workaround the issue:
+   There are three different ways to fix or work around the issue:
 
-1. Debug the application using a debugger that supports semihosting. Semihosting can be enabled with the following GDB command: `(gdb) monitor semihosting enable`. You can refer to the [uVisor debugging guide document](https://github.com/ARMmbed/uvisor/blob/master/docs/DEBUGGING.md#enabling-runtime-messages) for further details.
+   * Debug the application using a debugger that supports semihosting. Semihosting can be enabled with the following GDB command: `(gdb) monitor semihosting enable`. You can refer to the [uVisor debugging guide](https://github.com/ARMmbed/uvisor/blob/master/docs/DEBUGGING.md#enabling-runtime-messages) for further details.
 
-2. Copy the new uVisor release binaries resulting from the fix listed above to your local copy of uvisor-lib. This is the best option if you downloaded the mbed OS 16.03 release as a zip file. Copy the following file: https://goo.gl/lTEmzG to `libraries/uvisor-lib/source/kinetis/debug/` and build your application again.
+   * Copy the new uVisor release binaries resulting from the fix listed above to your local copy of uvisor-lib. This is the best option if you downloaded the mbed OS 16.03 release as a zip file. Copy the following file: https://goo.gl/lTEmzG to `libraries/uvisor-lib/source/kinetis/debug/` and build your application again.
 
-3. Update the yotta modules using `yotta update uvisor-lib` from the top-level folder of your application. This will download the latest uvisor-lib version, which includes the fix (version >= v2.1.2).
+   * Update the yotta modules using `yotta update uvisor-lib` from the top-level folder of your application. This will download the latest uvisor-lib version, which includes the fix (version >= v2.1.2).
 
 * **Reported Issue**: None. The bug has already been fixed in a newer version of uVisor.
 * **Priority**: Critical.
