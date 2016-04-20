@@ -29,6 +29,7 @@ In addition, there is partial and experimental support for the following target 
 * NXP JN5179 (yotta target: ‘nxpdk5-jn517x-gcc’).
 * BBC micro:bit.
 * ST Nucleo F401 and DISCO-F4291.
+* SiLabs EFM32 Giant Gecko and EFM32 Happy Gecko.
 
 ## Collaboration 
  
