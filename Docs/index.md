@@ -1,7 +1,8 @@
-# Release documents for mbed OS and mbed Client
+# mbed OS Release Documents
 
-This project holds the release notes for mbed OS and mbed Client.
+These are the release documents for mbed OS.
 
-The versions are presented in descending order. Each version has a release note and known issues list, one each for mbed OS and mbed Client. 
+The current version is 5.1:
 
-The current release is 16.03.
+* [Release note](5_1/release.md)
+* [Knows issues](5_1/known.md)
