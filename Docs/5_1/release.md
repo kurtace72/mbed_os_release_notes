@@ -63,11 +63,15 @@ The crypto libraries now support:
 * A reasonable strength entropy source based on non-volatile storage. 
 
 ###mbed TLS 
+
 We have integrated version 2.3.0 of mbed TLS, providing TLS and DTLS support for services. 
 
 See [the mbed TLS 2.3.0 release note](https://tls.mbed.org/tech-updates/releases/mbedtls-2.3.0-2.1.5-and-1.3.17-release).
 
+Please note that the ``mbed-os-example-client`` and ``mbed-os-example-tls`` applications both depend on mbed TLS. When built for boards that do not have hardware entropy support added to the code, a compilation error will occur. If you wish to build without hardware entropy support implemented, you must explicity enable NULL ENTROPY in the application. This should allow successful compilation. However, please be aware that no security will be offered by mbed TLS and a compilation warning will occur informing you of this. The recommended course of action is to implement hardware entropy for the board that you are using.
+
 ## Connectivity 
+
 The sockets API has been revised to support: 
 
 * Multiple stacks 
@@ -81,15 +85,19 @@ We've introduced an 802.15.4 MAC HAL to enable simplified porting of the 6LoWPAN
 We have released a 6LoWPAN Border Router reference application and an associated Linux-based Access Point example that demonstrates 6LoWPAN nodes connecting via an Access Points to the mbed Device Connector service. A development Thread Border Router is also available to mbed Partners. 
 
 We've extended our Bluetooth Low Energy (BLE) API to support user-defined scheduling policies. This maintains compatibility with mbed OS 2 BLE applications, while allowing developers to take advantage of the RTOS to design more efficient solutions. The Bluetooth API is now supported across multiple vendor silicon, covering both SoC and MCU plus Transceiver chipset arrangements. 
+
 ## Services 
+
 mbed OS integrates the latest mbed Cloud Client, providing connectivity and management services from mbed Device Connector. 
 
 See [the mbed Device Connector site](https://connector.mbed.com/).
+
 ## Tools and workflow 
+
 We've reworked the tools and workflows to address feedback from previous releases on the use of yotta and the desire for backward compatibility with mbed OS 2 (“Classic”). In this release we build the OS, components and applications using modified versions of the mbed OS 2 build scripts. 
 
-
 ### mbed CLI
+
 You can use a new top level command line interface (mbed CLI) to drive the build, package management and test scripts. It is also a natural integration point for IDEs. 
 
 See [the mbed CLI repository](https://github.com/ARMmbed/mbed-cli). 
