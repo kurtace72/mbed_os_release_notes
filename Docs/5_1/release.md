@@ -1,13 +1,18 @@
 # mbed OS 5.1 - 5th August 2016 
+
 This is the release note for the mbed OS 5.1.0 release. It summarises the major changes in this version of mbed OS, as well as the requirements for partners looking to support this release on development platforms. 
+
 ## About this release 
+
 This release marks significant changes and enhancements that have accelerated features of our roadmap, opened up the applicability of mbed OS to many more IoT use cases, and unlocked compatibility with our mbed OS 2 "Classic" ecosystem. 
+
 ## Version summary 
+
 The headline changes in this release are: 
 
-* RTOS - mbed OS now incorporates an RTOS. This much-requested feature provides native thread support to the OS and applications, simplifying development and integration of complex and robust application components like networking stacks. It also enables both blocking and non-blocking design patterns. The RTOS requires very limited system overhead. 
-* Tooling - we have simplified the tooling and introduced native support for building and testing across the ARM Compiler 5, ARM GCC Embedded and IAR compiler toolchains. A command line interface script (mbed CLI) now drives the established mbed OS 2 build system to build the OS and associated developer applications and components. Dependencies are explicitly pinned to provide full reproducibility of builds. The target and toolchain can be selected independently of each other, and we run CI on mbed OS across all these compiler toolchains on every commit. yotta is not used in this release. 
-* Compatibility - the introduction of the RTOS and changes to tooling have allowed the possibility of compatibility with the mbed OS 2 ("Classic") ecosystem. We have taken this opportunity to re-base and merge the two development lines so that we now have just one platform and one set of tools. Existing partners can take advantage of investments made in mbed over the years, and both new and existing partners need to invest in only one project. Developers can benefit from all legacy components and libraries, alongside the existing and new features of mbed OS. 
+* RTOS - mbed OS now incorporates an RTOS. This much-requested feature provides native thread support to the OS and applications, simplifying development and integration of complex and robust application components like networking stacks. It also enables both blocking and non-blocking design patterns. The RTOS requires very limited system overhead. 
+* Tooling - we have simplified the tooling and introduced native support for building and testing across the ARM Compiler 5, ARM GCC Embedded and IAR compiler toolchains. A command line interface script (mbed CLI) now drives the established mbed OS 2 build system to build the OS and associated developer applications and components. Dependencies are explicitly pinned to provide full reproducibility of builds. The target and toolchain can be selected independently of each other, and we run CI on mbed OS across all these compiler toolchains on every commit. yotta is not used in this release. 
+* Compatibility - the introduction of the RTOS and changes to tooling have allowed the possibility of compatibility with the mbed OS 2 ("Classic") ecosystem. We have taken this opportunity to re-base and merge the two development lines so that we now have just one platform and one set of tools. Existing partners can take advantage of investments made in mbed over the years, and both new and existing partners need to invest in only one project. Developers can benefit from all legacy components and libraries, alongside the existing and new features of mbed OS. 
 
 These architectural changes enable merging the mbed OS 2 and mbed OS 3 codebases, websites and ecosystems, and are marked with a major revision update - mbed OS 5 (2+3=5!). 
 
@@ -16,8 +21,11 @@ Our mbed OS 5.0.1 was an internal version available only to partners, and mbed O
 Based on these changes and the hard work of our partners, mbed OS target support is also accelerated. This release supports multiple target platforms from multiple partners, with more ports regularly made available on a newly introduced minor release tick every two weeks. 
 
 The following sections provide more details of these and other changes in this release. 
+
 ## Core 
+
 ### RTOS 
+
 mbed OS now incorporates an RTOS. 
 
 The RTOS core is based on the widely used open-source CMSIS-RTOS RTX, providing an established kernel that can support threads and other RTOS services on very tiny devices. The RTOS primitives are always available, so that drivers and applications can rely on features such as threads, semaphores and mutexes. The RTOS is initialised ahead of entering the main() thread, enabling components to rely on RTOS facilities even if the core application is single threaded. 
@@ -27,6 +35,7 @@ The implementation is based on CMSIS-RTOS RTX 4.79.0, and we will be tracking an
 The MINAR eventing-only scheduler is not included in this release. An alpha version of a more flexible [event scheduler library](https://github.com/ARMmbed/mbed-events) is available, supporting the same design patterns within RTOS threads and components. This library will be merged and managed as part of the core OS codebase once it reaches release maturity.
  
 ### Drivers and support libraries 
+
 There is now driver support for a wide range of standard MCU peripherals across the extended target platforms: 
 
 * DigitalIn, DigitalOut, DigitalInOut 
@@ -46,9 +55,13 @@ These drivers have been internally upgraded to integrate thread safety logic, wh
 A new ``Callback`` class supersedes ``FunctionPointer`` (still supported) to provide a more flexible and neater syntax for capturing and calling static function and class member callbacks. It now uses the same class regardless of the number of arguments on the callback. 
 
 ### C libraries 
+
 The C libraries provided with each of the supported toolchains have been integrated into mbed OS, including implementation of thread safety support. 
+
 ## Security 
+
 ### uVisor 
+
 uVisor has been upgraded to support the RTOS. 
 
 We have made the modifications CMSIS required to allow uVisor to hook interrupts. These will be upstreamed to future CMSIS releases. 
@@ -56,6 +69,7 @@ We have made the modifications CMSIS required to allow uVisor to hook interrupts
 uVisor now includes a disabled mode for ARMv7-M and ARMv6-M architectures that maintains code compatibility even when uVisor is not present or active, enabling a smooth software upgrade path as platforms introduce support for uVisor. 
 
 ### Crypto 
+
 The crypto libraries now support:
 
 * An insecure NULL entropy mode to simplify support during development.
@@ -126,8 +140,8 @@ We've formalised the mbed Enabled program, providing versioned compliance criter
 
 The following resources are available: 
 
-* The mbed Enabled [requirements documents](https://www.mbed.com/mbed-enabled-requirements/), available in the Partner Portal.
-* The mbed Enabled [application form](https://docs.google.com/forms/d/e/1FAIpQLSf87Qw7FsDelw9L4q_sB8QW3Hy5aff5WRwZUhPlNzf2Xm6iVw/viewform).
+* The mbed Enabled [requirements documents](https://www.mbed.com/mbed-enabled-requirements/), available on the site.
+* The mbed Enabled [application form](https://docs.google.com/forms/d/e/1FAIpQLSf87Qw7FsDelw9L4q_sB8QW3Hy5aff5WRwZUhPlNzf2Xm6iVw/viewform).
 
 ## Targets 
 
@@ -179,5 +193,3 @@ We will add new targets in our bi-weekly releases as partners introduce support.
 ##Getting Started 
 
 To get started with this release, see the [Handbook](https://docs.mbed.com/docs/mbed-os-handbook/). 
- 
-
