@@ -5,6 +5,5 @@ docs_dir: Docs
 pages:
 - ['index.md','mbed OS Release Documents']
 - ['5_1/release.md', '5.1', 'mbed OS release note']
-- ['5_1/known.md', '5.1', 'mbed OS known issues list']
 
 copyright: © ARM Ltd. Copyright 2016 – ARM mbed IoT Device Platform
