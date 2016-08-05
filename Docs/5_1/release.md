@@ -68,7 +68,7 @@ We have integrated version 2.3.0 of mbed TLS, providing TLS and DTLS support for
 
 See [the mbed TLS 2.3.0 release note](https://tls.mbed.org/tech-updates/releases/mbedtls-2.3.0-2.1.5-and-1.3.17-release).
 
-Please note that the ``mbed-os-example-client`` and ``mbed-os-example-tls`` applications both depend on mbed TLS. When built for boards that do not have hardware entropy support added to the code, a compilation error will occur. If you wish to build without hardware entropy support implemented, you must explicity enable NULL ENTROPY in the application. This should allow successful compilation. However, please be aware that no security will be offered by mbed TLS and a compilation warning will occur informing you of this. The recommended course of action is to implement hardware entropy for the board that you are using.
+Please note, applications using mbed TLS on boards that have not yet implemented hardware entropy support must use the NULL ENTROPY configuration to build. However, please be aware that no security will be offered by mbed TLS in those cases. 
 
 ## Connectivity 
 
@@ -114,17 +114,11 @@ Code is compatible with c99/C++03, and doesn't use any C++11 or C++14 features.
 
 We now support building and testing across multiple toolchains (ARM Compiler 5, GCC ARM Embedded, IAR). Supporting these three toolchains is a requirement for partner ports. 
 
-We support generation of project files to enable opening mbed projects in Keil MDK, IAR Workbench and other environments. This is useful for development and launching debug sessions. 
-
 The build tools now emit static RAM and FLASH sizes and a top level breakdown on every build. 
 
-### Exporting into different IDEs
+### Exporting to Third Party IDEs
 
-While able to generate project files for many integrated development environments, we’d consider this feature alpha quality and expect that users will have to make a few tweaks to the generated files. 
-
-While our current focus has been on stability and unification of your own software and tools, fitting this into different environments has presented some corner cases as each IDE has its own limitations, build, link and load environments. We’re working hard to normalize this. We cannot guarantee the same consistency as using the mbed CLI or mbed Online Compiler. We will do our best to maintain the exported libraries, project file and makefiles, but please understand we cannot cover all cases and combinations, or provide support for use of these alternate tools themselves.
-
-We’re working with our partners to make this experience better; enjoy this feature, but keep this statement in mind.
+We support generation of project files to enable opening mbed OS projects in Keil MDK, IAR Workbench and other environments. This is useful for development and launching debug sessions, and can be achieved from mbed CLI or the mbed Online Compiler. 
 
 ## mbed Enabled 
 
@@ -162,22 +156,22 @@ Thanks to our partners' hard work, including an onsite workshop, the mbed OS 5.1
 - [ST Discovery F469NI (DISCO_F469NI)](https://developer.mbed.org/platforms/ST-Discovery-F469NI/)
 - [ST Discovery F746NG (DISCO_F746NG)](https://developer.mbed.org/platforms/ST-Discovery-F746NG/)
 - [ST Discovery L476VG (DISCO_L476VG)](https://developer.mbed.org/platforms/ST-Discovery-L476VG/)
-- [ST Nucleo (NUCLEO_F070RB)](https://developer.mbed.org/platforms/ST-Nucleo-F070RB/)
-- [ST Nucleo (NUCLEO_F072RB)](https://developer.mbed.org/platforms/ST-Nucleo-F072RB/)
-- [ST Nucleo (NUCLEO_F091RC)](https://developer.mbed.org/platforms/ST-Nucleo-F091RC/)
-- [ST Nucleo (NUCLEO_F103RB)](https://developer.mbed.org/platforms/ST-Nucleo-F103RB/)
-- [ST Nucleo (NUCLEO_F303RE)](https://developer.mbed.org/platforms/ST-Nucleo-F303RE/)
-- [ST Nucleo (NUCLEO_F401RE)](https://developer.mbed.org/platforms/ST-Nucleo-F401RE/)
-- [ST Nucleo (NUCLEO_F410RB)](https://developer.mbed.org/platforms/ST-Nucleo-F410RB/)
-- [ST Nucleo (NUCLEO_F411RE)](https://developer.mbed.org/platforms/ST-Nucleo-F411RE/)
-- [ST Nucleo (NUCLEO_F429ZI)](https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/)
-- [ST Nucleo (NUCLEO_F446RE)](https://developer.mbed.org/platforms/ST-Nucleo-F446RE/)
-- [ST Nucleo (NUCLEO_F746ZG)](https://developer.mbed.org/platforms/ST-Nucleo-F746ZG/)
-- [ST Nucleo (NUCLEO_F767ZI)](https://developer.mbed.org/platforms/ST-Nucleo-F767ZI/)
-- [ST Nucleo (NUCLEO_L073RZ)](https://developer.mbed.org/platforms/ST-Nucleo-L073RZ/)
-- [ST Nucleo (NUCLEO_L152RE)](https://developer.mbed.org/platforms/ST-Nucleo-L152RE/)
-- [ST Nucleo (NUCLEO_L432KC)](https://developer.mbed.org/platforms/ST-Nucleo-L432KC/)
-- [ST Nucleo (NUCLEO_L476RG)](https://developer.mbed.org/platforms/ST-Nucleo-L476RG/)
+- [ST Nucleo F070RB (NUCLEO_F070RB)](https://developer.mbed.org/platforms/ST-Nucleo-F070RB/)
+- [ST Nucleo F072RB (NUCLEO_F072RB)](https://developer.mbed.org/platforms/ST-Nucleo-F072RB/)
+- [ST Nucleo F091RC (NUCLEO_F091RC)](https://developer.mbed.org/platforms/ST-Nucleo-F091RC/)
+- [ST Nucleo F103RB (NUCLEO_F103RB)](https://developer.mbed.org/platforms/ST-Nucleo-F103RB/)
+- [ST Nucleo F303RE (NUCLEO_F303RE)](https://developer.mbed.org/platforms/ST-Nucleo-F303RE/)
+- [ST Nucleo F401RE (NUCLEO_F401RE)](https://developer.mbed.org/platforms/ST-Nucleo-F401RE/)
+- [ST Nucleo F410RB (NUCLEO_F410RB)](https://developer.mbed.org/platforms/ST-Nucleo-F410RB/)
+- [ST Nucleo F411RE (NUCLEO_F411RE)](https://developer.mbed.org/platforms/ST-Nucleo-F411RE/)
+- [ST Nucleo F429ZI (NUCLEO_F429ZI)](https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/)
+- [ST Nucleo F446RE (NUCLEO_F446RE)](https://developer.mbed.org/platforms/ST-Nucleo-F446RE/)
+- [ST Nucleo F746ZG (NUCLEO_F746ZG)](https://developer.mbed.org/platforms/ST-Nucleo-F746ZG/)
+- [ST Nucleo F767ZI (NUCLEO_F767ZI)](https://developer.mbed.org/platforms/ST-Nucleo-F767ZI/)
+- [ST Nucleo L073RZ (NUCLEO_L073RZ)](https://developer.mbed.org/platforms/ST-Nucleo-L073RZ/)
+- [ST Nucleo L152RE (NUCLEO_L152RE)](https://developer.mbed.org/platforms/ST-Nucleo-L152RE/)
+- [ST Nucleo L432KC (NUCLEO_L432KC)](https://developer.mbed.org/platforms/ST-Nucleo-L432KC/)
+- [ST Nucleo L476RG (NUCLEO_L476RG)](https://developer.mbed.org/platforms/ST-Nucleo-L476RG/)
 - [U-blox C027 (UBLOX_C027)](https://developer.mbed.org/platforms/u-blox-C027/)
 
 We will add new targets in our bi-weekly releases as partners introduce support. If you are a partner, please see details in the [Partner Portal](https://partners.mbed.com/en/partner-login/).  
