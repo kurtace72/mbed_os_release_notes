@@ -109,7 +109,17 @@ We now support building and testing across multiple toolchains (ARM Compiler 5, 
 We support generation of project files to enable opening mbed projects in Keil MDK, IAR Workbench and other environments. This is useful for development and launching debug sessions. 
 
 The build tools now emit static RAM and FLASH sizes and a top level breakdown on every build. 
+
+### Exporting into different IDEs
+
+While able to generate project files for many integrated development environments, we’d consider this feature alpha quality and expect that users will have to make a few tweaks to the generated files. 
+
+While our current focus has been on stability and unification of your own software and tools, fitting this into different environments has presented some corner cases as each IDE has its own limitations, build, link and load environments. We’re working hard to normalize this. We cannot guarantee the same consistency as using the mbed CLI or mbed Online Compiler. We will do our best to maintain the exported libraries, project file and makefiles, but please understand we cannot cover all cases and combinations, or provide support for use of these alternate tools themselves.
+
+We’re working with our partners to make this experience better; enjoy this feature, but keep this statement in mind.
+
 ## mbed Enabled 
+
 We've formalised the mbed Enabled program, providing versioned compliance criteria and technical requirements for boards, on-board interfaces and end products. 
 
 The following resources are available: 
