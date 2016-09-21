@@ -10,105 +10,118 @@ Here is a full list of all changes and fixes in this release.
 
 ### Ports for Upcoming Targets
 
-2504: [Disco_F769NI] Added new target
-
-2654: DELTA_DFBM_NQ620 platform porting
-
-2615: [MTM_MTCONNECT04S] Added support for MTM_MTCONNECT04S
-
-2548: Nucleof303ze
+* 2504: [Disco_F769NI] Added new target
+* 2654: DELTA_DFBM_NQ620 platform porting
+* 2615: [MTM_MTCONNECT04S] Added support for MTM_MTCONNECT04S
+* 2548: Nucleof303ze
 
 ### Fixes and Changes
 
-2678: Fixing NCS36510 compile on Linux
-
-2657: [MAX326xx] Removed echoing of characters and carriage return
-
-2651: Use lp_timer to count time in the deepsleep tests
-
-2645: NUCLEO_F446ZE - Enable mbed5 release version
-
-2643: Fix thread self termination
-
-2634: Updated USBHost for library changes
-
-2633: Updated USBDevice to use Callback
-
-2630: Test names not dependent on disk location of root
-
-2624: CFSTORE Bugfix for realloc() moving KV area and cfstore_file_t data structures not being updated correctly
-
-2623: DISCO_L476VG - Add Serial Flow Control pins + add SERIAL_FC macro
-
-2617: STM32F2xx - Enable Serial Flow Control
-
-2613: Correctly providing directories to build_apis
-
-2607: Fix uvisor memory tracing
-
-2604: Tools - Fix fill section size variation
-
-2601: Adding ON Semiconductor copyright notice to source and header files.
-
-2597: [HAL] Fixed "intrinsic is deprecated" warnings
-
-2596: [HAL] Improve memory tracer
-
-2594: Fix TCPServer constructor
-
-2593: Add app config command line switch for test and make
-
-2589: [NUC472] Fix heap configuration error with armcc
-
-2588: Timing tests drift refactor
-
-2587: add PTEx pins as option for SPI on Hexiwear - for SD Card Interface
-
-2584: Set size of callback irq array to IrqCnt
-
-2583: github issue and PR templates
-
-2582: [GCC_CR] fix runtime hang for baremetal build
-
-2580: lwip - Add check for previously-bound socket
-
-2579: lwip - Fix handling of max sockets in socket_accept
-
-2578: Fix double free in NanostackInterface
-
-2576: Add smoke test that builds example programs with mbed-cli
-
-2575: tools-config! - Allow an empty or mal-formed config to be passed to the config system
-
-2562: Fix GCC lazy init race condition and add test
-
-2559: [utest]: Allow the linker to remove any part of utest if not used
-
-2545: Added define guards for SEQUENTIAL_FLASH_JOURNAL_MAX_LOGGED_BLOBS so
-
-2538: STM32F4xx - Add support of ADC internal channels (Temp, VRef, VBat)
-
-2521: [NUCLEO_F207ZG] Add MBED5 capability
-
-2514: Updated FlexCan and SAI SDK drivers
-
-2487: Runtime dynamic memory tracing
-
-2442: Malloc heap info
-
-2419: [STM32F1] Add asynchronous serial
-
-2393: [tools] Prevent trace-backs from incomplete args
-
-2245: Refactor export subsystem
-
-2130: stm32 : reduce number of device.h files
+* 2678: Fixing NCS36510 compile on Linux
+* 2657: [MAX326xx] Removed echoing of characters and carriage return
+* 2651: Use lp_timer to count time in the deepsleep tests
+* 2645: NUCLEO_F446ZE - Enable mbed5 release version
+* 2643: Fix thread self termination
+* 2634: Updated USBHost for library changes
+* 2633: Updated USBDevice to use Callback
+* 2630: Test names not dependent on disk location of root
+* 2624: CFSTORE Bugfix for realloc() moving KV area and cfstore_file_t data structures not being updated correctly
+* 2623: DISCO_L476VG - Add Serial Flow Control pins + add SERIAL_FC macro
+* 2617: STM32F2xx - Enable Serial Flow Control
+* 2613: Correctly providing directories to build_apis
+* 2607: Fix uvisor memory tracing
+* 2604: Tools - Fix fill section size variation
+* 2601: Adding ON Semiconductor copyright notice to source and header files.
+* 2597: [HAL] Fixed "intrinsic is deprecated" warnings
+* 2596: [HAL] Improve memory tracer
+* 2594: Fix TCPServer constructor
+* 2593: Add app config command line switch for test and make
+* 2589: [NUC472] Fix heap configuration error with armcc
+* 2588: Timing tests drift refactor
+* 2587: add PTEx pins as option for SPI on Hexiwear - for SD Card Interface
+* 2584: Set size of callback irq array to IrqCnt
+* 2583: github issue and PR templates
+* 2582: [GCC_CR] fix runtime hang for baremetal build
+* 2580: lwip - Add check for previously-bound socket
+* 2579: lwip - Fix handling of max sockets in socket_accept
+* 2578: Fix double free in NanostackInterface
+* 2576: Add smoke test that builds example programs with mbed-cli
+* 2575: tools-config! - Allow an empty or mal-formed config to be passed to the config system
+* 2562: Fix GCC lazy init race condition and add test
+* 2559: [utest]: Allow the linker to remove any part of utest if not used
+* 2545: Added define guards for SEQUENTIAL_FLASH_JOURNAL_MAX_LOGGED_BLOBS so
+* 2538: STM32F4xx - Add support of ADC internal channels (Temp, VRef, VBat)
+* 2521: [NUCLEO_F207ZG] Add MBED5 capability
+* 2514: Updated FlexCan and SAI SDK drivers
+* 2487: Runtime dynamic memory tracing
+* 2442: Malloc heap info
+* 2419: [STM32F1] Add asynchronous serial
+* 2393: [tools] Prevent trace-backs from incomplete args
+* 2245: Refactor export subsystem
+* 2130: stm32 : reduce number of device.h files
 
 ### Using the release
 
 You can fetch the mbed OS 5.1.4 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.1.4".
 
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
+
+## mbed OS 5.1.3 release
+
+### New targets
+
+* KL27Z_IAR
+* MAX32620HSP_ARM_STD
+* MAX32620HSP_GCC_ARM
+* MAX32620HSP_IAR
+* NCS36510_ARM_STD
+* NCS36510_GCC_ARM
+* NCS36510_IAR
+
+### Changes in the version
+
+* Added support for NSAPI_REUSEADDR to the lwip interface.
+* STM32F3 family : Add and enable asynchronous serial, plus tests.
+* STM32L4 family : Add and enable asynchronous serial, plus tests.
+* Fixing issue where GCC fails to report compile errors when non-verbose.
+* Add ethernet and IPV4 support for: NUCLEO_F207ZG, NUCLEO_F429ZI, NUCLEO_F767ZI, DISCO_F746NG.
+* RZ_A1H - Enable SPI1 on pins P6_4 to P6_7.
+* KL27Z : SPI driver bug fixes and Improvements, ARM linker file update.
+* STM32F4, STM32F7 families : Add entropy functions, documentation, code improvements, fix build issues.
+* HEXIWEAR: Update I2C pin mapping, Add support to create KDS projects.
+* LWIP - fix recv blocking send on accepted sockets.
+* SingletonPtr bugfixes.
+* Beetle: Implement sleep API.
+* uVisor: Update to v0.20.1-alpha, minor documentation update.
+* STM32F3 : fix RTOS IAR test, RTOS GCC_ARM test.
+* nrf5x : Introduce uart hardware flow control configuration.
+* K64F/K22F: Implement HAL lp_timer API.
+* Ticker: Move ticker initialisation to object creation time.
+* STM32F4 : remove printf from pwmout
+* NXP : Fix multiple definition errors in GCC_CR build,  fix linker errors.
+* Add TOOLCHAIN_GCC_CR support.
+* STM32L1 family : Add and enable asynchronous serial, plus tests.
+* mbed-client : Fix Bootstrap and Connector functionality.
+* NUC472 : Fix Ethernet wrong INT status in RX_Action.
+* RTX_CM_lib.h : fix compiler warning.
+* NUCLEO : Use GCC small build for 64K flash STM32.
+* STM32F2 family : Add and enable asynchronous serial, plus tests.
+* uvisor : Move page heap after uVisor private data, update page allocator.
+* K64F: Revert to hardcoded stack pointer in RTX .
+* dns-query : Internal API change , documentation, Added support for multiple results and ipv6.
+* Add support for implementation-provided DNS servers.
+* Adopted netconn_gethostbyname in the lwip interface.
+* Restructured nsapi_dns.h to have clear separation between C/C++ .
+
+### Tool fixes
+
+* Tests: New ones added and some updates to existing.
+* RTOS:
+    * K64F: Revert to hardcoded stack pointer in RTX.
+    * Adding NCS36510 support.
+    * Add MAX32620 target support.
+    * Fix implicit declaration of function 'atexit'.
 
 ## mbed OS 5.1 - 5th August 2016 
 
