@@ -135,6 +135,11 @@ Please feel free to ask any questions or provide feedback on this release [on th
    * pwm and analog definition clean-up.
 * Nordic - NRF51 - fix for overflow in the ticket.
 
+## mbed OS 5.1.1 release
+
+* RTOS - fix joining a terminated thread.
+* K64F name fix for cmsis and hal.
+ 
 ## mbed OS 5.1 - 5th August 2016 
 
 This is the release note for the mbed OS 5.1.0 release. It summarises the major changes in this version of mbed OS, as well as the requirements for partners looking to support this release on development platforms. 
