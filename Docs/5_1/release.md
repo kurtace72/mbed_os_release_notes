@@ -123,6 +123,18 @@ Please feel free to ask any questions or provide feedback on this release [on th
     * Add MAX32620 target support.
     * Fix implicit declaration of function 'atexit'.
 
+## mbed OS 5.1.2 release
+
+* RTOS - fix stack for K64F, NRF52 armcc, NRF51:
+   * Main thread stack checking enabled.
+   * Fix heap limit checking and make memory regions explicit.
+* Deprecate macro - add `since` argument.
+* Override new and delete operators to trap errors.
+* Maxim - I2C and DAC bugfixes.
+* STM - STM32F4 - serial flow enablement, enable async serial.
+   * pwm and analog definition clean-up.
+* Nordic - NRF51 - fix for overflow in the ticket.
+
 ## mbed OS 5.1 - 5th August 2016 
 
 This is the release note for the mbed OS 5.1.0 release. It summarises the major changes in this version of mbed OS, as well as the requirements for partners looking to support this release on development platforms. 
