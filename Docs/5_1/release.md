@@ -2,7 +2,7 @@
 
 ## mbed OS 5.1.4 release
 
-We are pleased to announce the mbed OS 5.1.4 release is now available.
+We are pleased to announce the [mbed OS 5.1.4 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.1.4) is now available.
 
 This release includes many minor enhancements and fixes, adds some target HAL ports in preparation for upcoming new targets (ST Disco F769NI, Delta DFBM NQ620, MTM mtconnect 04S, ST Nucleo f303ze), and some early additions for runtime heap memory tracking features we're working on that we'll share more on soon.
 
@@ -69,6 +69,8 @@ Please feel free to ask any questions or provide feedback on this release [on th
 
 ## mbed OS 5.1.3 release
 
+The [mbed OS 5.1.3 release is now on GitHub](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.1.3).
+
 ### New targets
 
 * KL27Z_IAR
@@ -125,6 +127,8 @@ Please feel free to ask any questions or provide feedback on this release [on th
 
 ## mbed OS 5.1.2 release
 
+The [mbed OS 5.1.2 release is now on GitHub](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.1.2).
+
 * RTOS - fix stack for K64F, NRF52 armcc, NRF51:
    * Main thread stack checking enabled.
    * Fix heap limit checking and make memory regions explicit.
@@ -137,12 +141,16 @@ Please feel free to ask any questions or provide feedback on this release [on th
 
 ## mbed OS 5.1.1 release
 
+The [mbed OS 5.1.1 release is now on GitHub](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.1.1).
+
 * RTOS - fix joining a terminated thread.
 * K64F name fix for cmsis and hal.
  
 ## mbed OS 5.1 - 5th August 2016 
 
 This is the release note for the mbed OS 5.1.0 release. It summarises the major changes in this version of mbed OS, as well as the requirements for partners looking to support this release on development platforms. 
+
+The [mbed OS 5.1.0 release is on GitHub](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.1.0).
 
 ### About this release 
 
