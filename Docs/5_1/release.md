@@ -1,5 +1,162 @@
 # mbed OS 5.1 releases
 
+## mbed OS 5.1.5 release
+We are pleased to announce the [mbed OS 5.1.5 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.1.5) is now available.
+This release includes extended IAR support, uVisor on Beetle and fixes to the exporting process.
+
+Here is a full list of all changes and fixes in this release.
+
+### Ports for Upcoming Targets
+
+[2669](https://github.com/ARMmbed/mbed-os/pull/2669): Added u-blox C029 target
+
+[2707](https://github.com/ARMmbed/mbed-os/pull/2707): [EFM32] Add IAR support for remaining Silicon Labs targets
+
+[2819](https://github.com/ARMmbed/mbed-os/pull/2819): MultiTech xDot platform support - 09.26.2016
+
+[2827](https://github.com/ARMmbed/mbed-os/pull/2827): include MultiTech xDot in mbed 5 releases
+
+
+### Fixes and Changes
+
+[2648](https://github.com/ARMmbed/mbed-os/pull/2648): Disable RTOS tests for STM32 8K targets
+
+[2522](https://github.com/ARMmbed/mbed-os/pull/2522): Add CThunk for CM7
+
+[2682](https://github.com/ARMmbed/mbed-os/pull/2682): classic mbed: bugfix can loop test
+
+[2518](https://github.com/ARMmbed/mbed-os/pull/2518): Enable uvisor on Beetle
+
+[2685](https://github.com/ARMmbed/mbed-os/pull/2685): Replace vendor specific register usage in stm32f4_emac.c with basic register
+
+[2688](https://github.com/ARMmbed/mbed-os/pull/2688): Avoid type collision by renaming callback variable
+
+[2561](https://github.com/ARMmbed/mbed-os/pull/2561): lwip - Add checks for invalid state of network
+
+[2571](https://github.com/ARMmbed/mbed-os/pull/2571): STM32F7 - Add asynchronous serial
+
+[2612](https://github.com/ARMmbed/mbed-os/pull/2612): Fixed bug on memap (non-default output path)
+
+[2616](https://github.com/ARMmbed/mbed-os/pull/2616): STM32F3xx - Add Serial Flow Control pins + enable it
+
+[2619](https://github.com/ARMmbed/mbed-os/pull/2619): NUCLEO_L152RE - Add Serial Flow Control
+
+[2620](https://github.com/ARMmbed/mbed-os/pull/2620): NUCLEO_F429ZI - Add SERIAL_FC macro
+
+[2659](https://github.com/ARMmbed/mbed-os/pull/2659): Fix exported project file group naming
+
+[2665](https://github.com/ARMmbed/mbed-os/pull/2665): nsapi - Add equality operators to SocketAddress class
+
+[2666](https://github.com/ARMmbed/mbed-os/pull/2666): [EFM32] Microsecond ticker optimization
+
+[2671](https://github.com/ARMmbed/mbed-os/pull/2671): tools-exporters! - Globally add a gettingstarted.html
+
+[2672](https://github.com/ARMmbed/mbed-os/pull/2672): [EFM32] Fix exporter to pull root path
+
+[2674](https://github.com/ARMmbed/mbed-os/pull/2674): tools - Correct adding repo_files
+
+[2675](https://github.com/ARMmbed/mbed-os/pull/2675): Revise checking toolchain path
+
+[2681](https://github.com/ARMmbed/mbed-os/pull/2681): STM32F0xx - Add support of ADC internal channels
+
+[2687](https://github.com/ARMmbed/mbed-os/pull/2687): [NRF5] Add fs_data symbol in data secton for gcc
+
+[2696](https://github.com/ARMmbed/mbed-os/pull/2696): Add device_has to all nrf51 devices
+
+[2697](https://github.com/ARMmbed/mbed-os/pull/2697): tools-exporters! - disable inclusion of repo-dirs in zips by default
+
+[2703](https://github.com/ARMmbed/mbed-os/pull/2703): TARGET_NRF5: Changed 'serial_baud' implementation to support special baud rates.
+
+[2704](https://github.com/ARMmbed/mbed-os/pull/2704): DISCO_L476VG: add SPI nicknames
+
+[2710](https://github.com/ARMmbed/mbed-os/pull/2710): Remove "lib" and "lib64" from the mbed-OS .gitignore file: they do no
+
+[2721](https://github.com/ARMmbed/mbed-os/pull/2721): tools - Add documentation about profiles to the toolcahins
+
+[2723](https://github.com/ARMmbed/mbed-os/pull/2723): KSDK serial_api.c: Fix assertion error for ParityEven
+
+[2735](https://github.com/ARMmbed/mbed-os/pull/2735): Fixing archived library builds for IAR
+
+[2463](https://github.com/ARMmbed/mbed-os/pull/2463): [STM32L0] Add asynchronous serial
+
+[2572](https://github.com/ARMmbed/mbed-os/pull/2572): Fix STM32F407VG target name and LPC11U6X linker errors
+
+[2698](https://github.com/ARMmbed/mbed-os/pull/2698): DELTA_DFBM_NQ620 target
+
+[2722](https://github.com/ARMmbed/mbed-os/pull/2722): lwip - Fixed error code on disconnect TCP socket
+
+[2731](https://github.com/ARMmbed/mbed-os/pull/2731): [TARGET_STM] IPV4 feature hal files factorisation
+
+[2542](https://github.com/ARMmbed/mbed-os/pull/2542): Dev spi asynch stm32f4
+
+[2614](https://github.com/ARMmbed/mbed-os/pull/2614): Change default uvision exporter to uvision5
+
+[2640](https://github.com/ARMmbed/mbed-os/pull/2640): [NUCLEO_F072RB-NUCLEO_F070RB] RTOS issues
+
+[2650](https://github.com/ARMmbed/mbed-os/pull/2650): STM32F3 - Add low power timer
+
+[2662](https://github.com/ARMmbed/mbed-os/pull/2662): Update CONTRIBUTING.md
+
+[2744](https://github.com/ARMmbed/mbed-os/pull/2744): FEATURE_IPV4/TESTS: result status could be wrong
+
+[2754](https://github.com/ARMmbed/mbed-os/pull/2754): New exporter build tests
+
+[2757](https://github.com/ARMmbed/mbed-os/pull/2757): Refactor Target and Config away from global variables
+
+[2852](https://github.com/ARMmbed/mbed-os/pull/2852): Release - Update custom target handling
+
+[2415](https://github.com/ARMmbed/mbed-os/pull/2415): [STM32F0] Add asynchronous serial
+
+[2585](https://github.com/ARMmbed/mbed-os/pull/2585): Added support for ADC only pins in LPC43xx
+
+[2622](https://github.com/ARMmbed/mbed-os/pull/2622): [STM32F4] Add asynchronous I2C
+
+[2719](https://github.com/ARMmbed/mbed-os/pull/2719): Updated ARM linker scripts for Kinetis platforms that use SDK 2.0
+
+[2727](https://github.com/ARMmbed/mbed-os/pull/2727): Serial init timeout: increase default value
+
+[2728](https://github.com/ARMmbed/mbed-os/pull/2728): Added ethernet and enabled IPV4 feature for the EVK-ODIN-W2/C029 target
+
+[2739](https://github.com/ARMmbed/mbed-os/pull/2739): STM32 / IPV4: #2685 has been forgotten with #2731
+
+[2747](https://github.com/ARMmbed/mbed-os/pull/2747): [LPC11U68] Fix pin interrupt select offset
+
+[2751](https://github.com/ARMmbed/mbed-os/pull/2751): STM32L0xx - Add Serial Flow Control
+
+[2753](https://github.com/ARMmbed/mbed-os/pull/2753): [NUCLEO_F767ZI] Add CAN capability
+
+[2759](https://github.com/ARMmbed/mbed-os/pull/2759): STM32F0 - Add low power timer
+
+[2763](https://github.com/ARMmbed/mbed-os/pull/2763): STM32L1 - Add low power timer
+
+[2764](https://github.com/ARMmbed/mbed-os/pull/2764): STM32L4 - Add low power timer
+
+[2771](https://github.com/ARMmbed/mbed-os/pull/2771): STM32L4 - Update deepsleep implementation
+
+[2775](https://github.com/ARMmbed/mbed-os/pull/2775): Update KSDK SDHC driver for K64F & K66F
+
+[2788](https://github.com/ARMmbed/mbed-os/pull/2788): Print percent complete when building
+
+[2792](https://github.com/ARMmbed/mbed-os/pull/2792): [NUCLEO_F303ZE] MBED-OS5 capability
+
+[2779](https://github.com/ARMmbed/mbed-os/pull/2779): [NUCLEO_F103RB] RTOS tests update
+
+[2712](https://github.com/ARMmbed/mbed-os/pull/2712): Fixing constant cleaning when compiling tests
+
+[2762](https://github.com/ARMmbed/mbed-os/pull/2762): STM32L0 - Add low power timer
+
+[2761](https://github.com/ARMmbed/mbed-os/pull/2761): STM32F7 - Add low power timer
+
+[2800](https://github.com/ARMmbed/mbed-os/pull/2800): Removed --no_static_destruction from IAR IDE flags
+
+
+### Using the release
+
+You can fetch the mbed OS 5.1.5 release from the [mbed-os GitHUb](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.1.5".
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
+
 ## mbed OS 5.1.4 release
 
 We are pleased to announce the [mbed OS 5.1.4 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.1.4) is now available.
