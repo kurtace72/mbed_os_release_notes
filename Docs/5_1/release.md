@@ -2,6 +2,7 @@
 
 ## mbed OS 5.1.5 release
 We are pleased to announce the [mbed OS 5.1.5 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.1.5) is now available.
+
 This release includes extended IAR support, uVisor on Beetle and fixes to the exporting process.
 
 Here is a full list of all changes and fixes in this release.
