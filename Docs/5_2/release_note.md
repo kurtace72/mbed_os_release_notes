@@ -1,1 +1,1 @@
-# mbed OS 5.2
+# mbed OS 5.2 release notes
