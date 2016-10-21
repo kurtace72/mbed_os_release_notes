@@ -64,9 +64,9 @@ The mbed Enabled program continues to provide compliance criteria and technical 
 
 The following resources are available: 
 
-* The mbed Enabled requirements documents. 
-* The mbed Enabled application form. 
- 
+* The [mbed Enabled requirements documents](https://www.mbed.com/en/about-mbed/mbed-enabled/mbed-enabled-program-requirements/).
+* The [mbed Enabled application form](https://docs.google.com/forms/d/e/1FAIpQLSf87Qw7FsDelw9L4q_sB8QW3Hy5aff5WRwZUhPlNzf2Xm6iVw/viewform).
+
 ## Targets 
 
 Thanks to our partners’ hard work, mbed OS 5.2 has been extended to support over 60 targets. 
