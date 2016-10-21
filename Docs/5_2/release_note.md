@@ -1,8 +1,6 @@
 # mbed OS 5.2 releases
 
-## mbed OS 5.2.1 release
-
-# mbed OS 5.2 – 20th October 2016 
+## mbed OS 5.2.0 release
 
 This is the release note for mbed OS 5.2.0, summarizing the major enhancements in this version. 
 
