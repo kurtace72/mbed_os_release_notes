@@ -56,7 +56,7 @@ The tools now support toolchain profiles, in particular to enable simple debug a
 
 The Online IDE now supports git and GitHub repositories, so you can use both mercurial and GitHub distributed version control systems. 
 
-We improved the mechanism for project export to different toolchains and IDEs more scalable, including utilising CMSIS-Packs for target information generation. Some combinations of targets and toolchains are already supported and we will be working with partners to improve support coverage in future patch releases. 
+The export mechanism supporting project generation for different toolchains and IDEs has been redeveloped to be more versatile and scalable, and now uses CMSIS-Packs for target information. When exporting to MDK and IAR, the corresponding target CMSIS-Packs must be available. Known issues include limited target coverage, needing additional configuration steps in IDEs to have projects fully functional, and exporters for Make may have linking errors where archives are used. We will be working with our silicon and tools partners to improve target coverage and project generation in future patch releases.
 
 ## mbed Enabled 
 
