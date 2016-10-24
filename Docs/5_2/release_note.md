@@ -4,7 +4,7 @@
 
 This is the release note for mbed OS 5.2.0, summarizing the major enhancements in this version. 
 
-You can find the [mbed OS 5.2.0 release on GitHub](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.2). 
+You can find the [mbed OS 5.2.0 release on GitHub](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.2.0). 
 
 ### About this release 
 
