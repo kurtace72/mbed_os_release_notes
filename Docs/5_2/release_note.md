@@ -1,5 +1,59 @@
 # mbed OS 5.2 releases
 
+## mbed OS 5.2.1 release
+
+We are pleased to announce the [mbed OS 5.2.1 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.2.1) is now available.
+
+### Fixes and Changes
+
+[2966](https://github.com/ARMmbed/mbed-os/pull/2966): Add kw24 support
+
+[3068](https://github.com/ARMmbed/mbed-os/pull/3068): MultiTech mDot - clean up PeripheralPins.c and add new pin names
+
+[3089](https://github.com/ARMmbed/mbed-os/pull/3089): Kinetis HAL: Remove clock initialization code from serial and ticker 
+
+[2943](https://github.com/ARMmbed/mbed-os/pull/2943): [NRF5] NVIC_SetVector functionality
+
+[2938](https://github.com/ARMmbed/mbed-os/pull/2938): InterruptIn changes in NCS36510 HAL.
+
+[3112](https://github.com/ARMmbed/mbed-os/pull/3112): events - Remove unused variable warning in ndebug builds
+
+[2953](https://github.com/ARMmbed/mbed-os/pull/2953): nsapi - Fix leftover bytes from suffix during ipv6 parsing
+
+[3108](https://github.com/ARMmbed/mbed-os/pull/3108): Fix sleep function for NRF52.
+
+[3076](https://github.com/ARMmbed/mbed-os/pull/3076): STM32F1: Correct timer master value reading
+
+[3085](https://github.com/ARMmbed/mbed-os/pull/3085): Add LOWPOWERTIMER capability for NUCLEO_F303ZE
+
+[3093](https://github.com/ARMmbed/mbed-os/pull/3093): [SDFileSystem] Enable / Disable serial debug.
+
+[3097](https://github.com/ARMmbed/mbed-os/pull/3097): Arm-Pack-Manager Remove pycurl dependency
+
+[3046](https://github.com/ARMmbed/mbed-os/pull/3046): [BEETLE] Update BLE stack on Beetle board
+
+[3005](https://github.com/ARMmbed/mbed-os/pull/3005): New build profile and docs
+
+[3122](https://github.com/ARMmbed/mbed-os/pull/3122): [Silicon Labs] Update of Silicon Labs HAL
+
+[3022](https://github.com/ARMmbed/mbed-os/pull/3022): OnSemi RAM usage fix
+
+[3121](https://github.com/ARMmbed/mbed-os/pull/3121): STM32F3: Correct UART4 and UART5 defines when using DEVICE_SERIAL_ASYNCH
+
+[2897](https://github.com/ARMmbed/mbed-os/pull/2897): nsapi - Standardize support of NSAPI_UNSPEC
+
+[3024](https://github.com/ARMmbed/mbed-os/pull/3024): analog_loop tests update for STM32
+
+[3142](https://github.com/ARMmbed/mbed-os/pull/3142): Targets- NUMAKER_PFM_NUC47216 remove mbed 2
+
+
+### Using the release
+
+You can fetch the mbed OS 5.2.1 release from the [mbed-os GitHUb](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.2.1".
+
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
 ## mbed OS 5.2.0 - 21st October 2016
 
 This is the release note for mbed OS 5.2.0, summarizing the major enhancements in this version. 
