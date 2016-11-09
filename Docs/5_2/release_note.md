@@ -1,5 +1,132 @@
 # mbed OS 5.2 releases
 
+## mbed OS 5.2.2 release
+We are pleased to announce the [mbed OS 5.2.2 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.2.2) is now available.
+
+This release includes support for new targets: Sara-N, MAX32625, FRDM-K82F and k22512. 
+
+Other key highlights are:
+
+- Implementation of the API for serial port flow control in NRF51 targets.
+
+- Support for 6LoWPAN PAN ID filter added to mbed mesh API configuration.
+
+- Updated u-blox ODIN-W2 drivers.
+
+- A number of bug fixes and tool improvements.
+
+### Known issues in this release
+
+There is currently a DNS resolution failure in Thread mode. This causes a failure in the 
+mbed-os-example-client and will be fixed in a subsequent release. This can be worked around by reverting 
+to mbed-os-5.2.0.
+
+Here is a full list of all changes and fixes in this release.
+
+### Ports for Upcoming Targets
+
+[3011](https://github.com/ARMmbed/mbed-os/pull/3011): Add u-blox Sara-N target.
+
+[3099](https://github.com/ARMmbed/mbed-os/pull/3099): MAX32625
+
+[3151](https://github.com/ARMmbed/mbed-os/pull/3151): Add support for FRDM-K82F
+
+[3177](https://github.com/ARMmbed/mbed-os/pull/3177): New mcu k22512 fixing pr 3136
+
+### Fixes and Changes
+
+[2990](https://github.com/ARMmbed/mbed-os/pull/2990): [tools] Parallel building of tests
+
+[3008](https://github.com/ARMmbed/mbed-os/pull/3008): NUCLEO_F072RB: Fix wrong timer channel number on pwm PB_5 pin
+
+[3013](https://github.com/ARMmbed/mbed-os/pull/3013): STM32xx - Change how the ADC internal pins are checked before pinmap_
+
+[3023](https://github.com/ARMmbed/mbed-os/pull/3023): digital_loop tests update for STM32
+
+[3041](https://github.com/ARMmbed/mbed-os/pull/3041): [nRF5] - added implementation of API of serial port flow control configuration.
+
+[3092](https://github.com/ARMmbed/mbed-os/pull/3092): [tools + tests] Adding parallelized build option for iar and uvision exporters
+
+[3084](https://github.com/ARMmbed/mbed-os/pull/3084): [nrf5] fix in Digital I/O : a gpioe pin was uninitialized badly
+
+[3009](https://github.com/ARMmbed/mbed-os/pull/3009): TRNG enabled. TRNG APIs implemented. REV A/B/C/D flags removed. Warnings removed
+
+[3139](https://github.com/ARMmbed/mbed-os/pull/3139): Handle [NOT_SUPPORTED] exception in make.py
+
+[3074](https://github.com/ARMmbed/mbed-os/pull/3074): Target stm init gcc alignement
+
+[3140](https://github.com/ARMmbed/mbed-os/pull/3140): [tests] Replacing getchar with RawSerial getc in greentea-client
+
+[3158](https://github.com/ARMmbed/mbed-os/pull/3158): Added support for 6lowpan PAN ID filter to mbed mesh api configuration
+
+[2988](https://github.com/ARMmbed/mbed-os/pull/2988): Update of can_api.c fixing #2987
+
+[3175](https://github.com/ARMmbed/mbed-os/pull/3175): Updating IAR definition for the NCS36510 for IAR EW v7.8
+
+[3170](https://github.com/ARMmbed/mbed-os/pull/3170): [tests] Preventing test from printing before Greentea __sync
+
+[3169](https://github.com/ARMmbed/mbed-os/pull/3169): [Update of #3014] Usb updates
+
+[3143](https://github.com/ARMmbed/mbed-os/pull/3143): CFStore fix needed for the Cloud Client
+
+[3135](https://github.com/ARMmbed/mbed-os/pull/3135): lwip - Fix memory leak in k64f cyclic-buffer overflow
+
+[3048](https://github.com/ARMmbed/mbed-os/pull/3048): Make update.py test compile examples prior to updating mbed-os version.
+
+[3162](https://github.com/ARMmbed/mbed-os/pull/3162): lwip/nsapi - Clean up warnings in network code
+
+[3161](https://github.com/ARMmbed/mbed-os/pull/3161): nsapi - Add better heuristic for the default record of DNS queries
+
+[3173](https://github.com/ARMmbed/mbed-os/pull/3173): [Exporters] Add a device_name to microbit entry in targets.json
+
+[3072](https://github.com/ARMmbed/mbed-os/pull/3072): i2c_loop tests update for STM32
+
+[2958](https://github.com/ARMmbed/mbed-os/pull/2958): Allowing mbed_app.json files to be discovered for tests.
+
+[2969](https://github.com/ARMmbed/mbed-os/pull/2969): [nRF52] - switch irq priorities of driver handlers to the lowest level
+
+[3078](https://github.com/ARMmbed/mbed-os/pull/3078): lwip: Allow several configuration macros to be set externally (bis)
+
+[3165](https://github.com/ARMmbed/mbed-os/pull/3165): Add address type checks to NanostackInterface
+
+[3166](https://github.com/ARMmbed/mbed-os/pull/3166): nsapi_dns: Provide 2 IPv6-hosted default servers
+
+[3171](https://github.com/ARMmbed/mbed-os/pull/3171): [tools] Fixing project.py -S printing problem
+
+[3172](https://github.com/ARMmbed/mbed-os/pull/3172): [Exporters] New export-build tests
+
+[3184](https://github.com/ARMmbed/mbed-os/pull/3184): #3183 Compiler warning in trng_api.c with K64F 
+
+[3185](https://github.com/ARMmbed/mbed-os/pull/3185): Update tests to fix build failures. Also make the code similar to oth
+
+[3104](https://github.com/ARMmbed/mbed-os/pull/3104): [NuMaker] Support CAN and fix PWM CLK error
+
+[3182](https://github.com/ARMmbed/mbed-os/pull/3182): Exporter documentation
+
+[3186](https://github.com/ARMmbed/mbed-os/pull/3186): MultiTech mDot - add back SPI3 pins
+
+[3187](https://github.com/ARMmbed/mbed-os/pull/3187): [Export-Make] Use internal class variable for resolving templates in makefiles
+
+[3195](https://github.com/ARMmbed/mbed-os/pull/3195): [Exporters - Make-based] Quote the shell call in mkdir and rmdir
+
+[3204](https://github.com/ARMmbed/mbed-os/pull/3204): [Export build-test] Directory traversal error
+
+[3189](https://github.com/ARMmbed/mbed-os/pull/3189): [Exporters - Make-based] Force make exporter to search PATH for compilers
+
+[3200](https://github.com/ARMmbed/mbed-os/pull/3200): Using Popen for uVision and unifying the structure of the build function
+
+[3075](https://github.com/ARMmbed/mbed-os/pull/3075): nsapi - Add standardized return types for size and errors
+
+[3221](https://github.com/ARMmbed/mbed-os/pull/3221): u-blox odin w2 drivers update
+
+
+### Using the release
+
+You can fetch the mbed OS 5.2.2 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.2.2".
+
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
 ## mbed OS 5.2.1 release
 
 We are pleased to announce the [mbed OS 5.2.1 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.2.1) is now available.
@@ -49,7 +176,7 @@ We are pleased to announce the [mbed OS 5.2.1 release](https://github.com/ARMmbe
 
 ### Using the release
 
-You can fetch the mbed OS 5.2.1 release from the [mbed-os GitHUb](https://github.com/ARMmbed/mbed-os) repository,
+You can fetch the mbed OS 5.2.1 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
 using the tag "mbed-os-5.2.1".
 
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
