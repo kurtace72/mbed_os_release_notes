@@ -3,8 +3,7 @@
 ## mbed OS 5.2.3 release
 
 We are pleased to announce the [mbed OS 5.2.3 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.2.3) is now available.
-This release includes a number of fixes and additional tests, along with adding I2C_ASYNCH capability for NUCLEO_F410RB and DISCO_F469NI,
-and support for a single UART shared by multiple serial objects on NUC472/M453.
+This release includes a number of fixes and additional tests, along with adding I2C_ASYNCH capability for NUCLEO_F410RB and DISCO_F469NI, and support for a single UART shared by multiple serial objects on NUC472/M453.
 
 ### Known Issues
 
@@ -90,8 +89,7 @@ and support for a single UART shared by multiple serial objects on NUC472/M453.
 
 ### Using the release
 
-You can fetch the mbed OS 5.2.3 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
-using the tag "mbed-os-5.2.3".
+You can fetch the mbed OS 5.2.3 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.2.3".
 
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
@@ -112,9 +110,7 @@ Other key highlights are:
 
 ### Known issues in this release
 
-There is currently a DNS resolution failure in Thread mode. This causes a failure in the 
-mbed-os-example-client and will be fixed in a subsequent release. This can be worked around by reverting 
-to mbed-os-5.2.0.
+There is currently a DNS resolution failure in Thread mode. This causes a failure in the  mbed-os-example-client and will be fixed in a subsequent release. This can be worked around by reverting to mbed-os-5.2.0.
 
 Here is a full list of all changes and fixes in this release.
 
@@ -217,8 +213,7 @@ Here is a full list of all changes and fixes in this release.
 
 ### Using the release
 
-You can fetch the mbed OS 5.2.2 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
-using the tag "mbed-os-5.2.2".
+You can fetch the mbed OS 5.2.2 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.2.2".
 
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
@@ -271,8 +266,7 @@ We are pleased to announce the [mbed OS 5.2.1 release](https://github.com/ARMmbe
 
 ### Using the release
 
-You can fetch the mbed OS 5.2.1 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
-using the tag "mbed-os-5.2.1".
+You can fetch the mbed OS 5.2.1 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.2.1".
 
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
