@@ -1,5 +1,100 @@
 # mbed OS 5.2 releases
 
+## mbed OS 5.2.3 release
+
+We are pleased to announce the [mbed OS 5.2.3 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.2.3) is now available.
+This release includes a number of fixes and additional tests, along with adding I2C_ASYNCH capability for NUCLEO_F410RB and DISCO_F469NI,
+and support for a single UART shared by multiple serial objects on NUC472/M453.
+
+### Known Issues
+
+[3314](https://github.com/ARMmbed/mbed-os/issues/3314): TLS handshake fails using WiFi in mbed OS 5.2.3
+
+### Fixes and Changes
+
+[3087](https://github.com/ARMmbed/mbed-os/pull/3087): Update pack-derived files, and add safely test to uVision exporter
+
+[3113](https://github.com/ARMmbed/mbed-os/pull/3113): Add static assert macro 
+
+[3127](https://github.com/ARMmbed/mbed-os/pull/3127): Fixed the issue about push/pop of VFP register.
+
+[3176](https://github.com/ARMmbed/mbed-os/pull/3176): Modifying micro:bit pin names to mirror micro:bit edge connector
+
+[3202](https://github.com/ARMmbed/mbed-os/pull/3202): Fix arithmetic error in rtos-based wait
+
+[3205](https://github.com/ARMmbed/mbed-os/pull/3205): [Exporter tests] Export only 
+
+[3207](https://github.com/ARMmbed/mbed-os/pull/3207): Add mbed OS version macros
+
+[3208](https://github.com/ARMmbed/mbed-os/pull/3208): [example tests] Adding a clone and a deploy step to allow optimizations in CI.
+
+[3206](https://github.com/ARMmbed/mbed-os/pull/3206): [Exporter/compile tests] Examples test filters
+
+[3010](https://github.com/ARMmbed/mbed-os/pull/3010): Add .hpp to list of Uvision Exporter extensions
+
+[3160](https://github.com/ARMmbed/mbed-os/pull/3160): Fix wrong index at LPC43xx tx end ring assignment
+
+[3247](https://github.com/ARMmbed/mbed-os/pull/3247): WiFi: Minor fixes to docs and includes
+
+[3232](https://github.com/ARMmbed/mbed-os/pull/3232): nsapi - Fix missing NSAPI_UNSPEC check in gethostbyname for ip literals
+
+[3222](https://github.com/ARMmbed/mbed-os/pull/3222): [Export - Make] Add message that informs the user which hex to flash
+
+[3220](https://github.com/ARMmbed/mbed-os/pull/3220): rtos - Mark the RtosTimer class as deprecated
+
+[3217](https://github.com/ARMmbed/mbed-os/pull/3217): Add I2C_ASYNCH capability for DISCO_F469NI
+
+[3211](https://github.com/ARMmbed/mbed-os/pull/3211): [NUC472/M453] Support single UART shared by multiple serial objects and other updates
+
+[3198](https://github.com/ARMmbed/mbed-os/pull/3198): NUCLEO_F410RB: Add I2C_ASYNCH capability
+
+[3194](https://github.com/ARMmbed/mbed-os/pull/3194): Update K64 sdk drivers
+
+[3191](https://github.com/ARMmbed/mbed-os/pull/3191): Fix lwip_mac_address buffer overflow and set_ip_bytes out of bound access
+
+[3188](https://github.com/ARMmbed/mbed-os/pull/3188): [Exporters] Append targets to scan list for exporting tests
+
+[3159](https://github.com/ARMmbed/mbed-os/pull/3159): User trim values for NCS36510
+
+[3243](https://github.com/ARMmbed/mbed-os/pull/3243): Fix make exporters compilation
+
+[3229](https://github.com/ARMmbed/mbed-os/pull/3229): [Tools - Toolchains] Allow dependency parsing to fail, gracefully continuing
+
+[3231](https://github.com/ARMmbed/mbed-os/pull/3231): STM32F3: DISCO_F303VC - Add missing UART and ADC pin muxing options
+
+[3233](https://github.com/ARMmbed/mbed-os/pull/3233): K20xx Calculate PWM clock relative to bus clock
+
+[3237](https://github.com/ARMmbed/mbed-os/pull/3237): Added back USART 6 pins
+
+[3248](https://github.com/ARMmbed/mbed-os/pull/3248): test i2c slave: use standard Arduino pins for NUCLEO_F411RE
+
+[3250](https://github.com/ARMmbed/mbed-os/pull/3250): Change MBED_DEPRECATED def order to support Keil 4
+
+[3253](https://github.com/ARMmbed/mbed-os/pull/3253): Fix default polarity on LPC43XX PWM driver
+
+[3257](https://github.com/ARMmbed/mbed-os/pull/3257): Baudrate in test spec
+
+[3258](https://github.com/ARMmbed/mbed-os/pull/3258): Prevent process pool inside of process pool when building tests
+
+[3065](https://github.com/ARMmbed/mbed-os/pull/3065): nsapi - Remove assertions on same-thread send/recv
+
+[3238](https://github.com/ARMmbed/mbed-os/pull/3238): Dev i2c stm32f4hal
+
+[3244](https://github.com/ARMmbed/mbed-os/pull/3244): callback - Relax type-deduction in callback class
+
+[3251](https://github.com/ARMmbed/mbed-os/pull/3251): Dev stm32l0 cube v1.7.0
+
+[3252](https://github.com/ARMmbed/mbed-os/pull/3252): [NORDIC - NRF51 - MBED 2] Fix non handled RTC IRQ
+
+[3262](https://github.com/ARMmbed/mbed-os/pull/3262): Add API which cleans Dcache in IAR compiler.
+
+### Using the release
+
+You can fetch the mbed OS 5.2.3 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.2.3".
+
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
 ## mbed OS 5.2.2 release
 We are pleased to announce the [mbed OS 5.2.2 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.2.2) is now available.
 
