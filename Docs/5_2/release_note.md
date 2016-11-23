@@ -3,6 +3,7 @@
 ## mbed OS 5.2.3 release
 
 We are pleased to announce the [mbed OS 5.2.3 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.2.3) is now available.
+
 This release includes a number of fixes and additional tests, along with adding I2C_ASYNCH capability for NUCLEO_F410RB and DISCO_F469NI, and support for a single UART shared by multiple serial objects on NUC472/M453.
 
 ### Known Issues
