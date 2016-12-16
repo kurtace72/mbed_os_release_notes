@@ -3,15 +3,17 @@ This is the release note for mbed OS 5.3.0, summarizing the major enhancements i
 You can find the mbed OS 5.3.0 release on GitHub. 
 
 ##About this release 
-This release makes available early versions of key features we are working on in development branches, alongside many enhancements and bug fixes to our stable release codeline. This release will be of particular interest to partners and developers who would like to work with us on these features ahead of them being made generally available. 
+This release makes available early versions of key new features we are working on in development branches, alongside many enhancements and bug fixes to our stable release codeline. These new features will be of particular interest to partners and developers who would like to observe and contribute to their development ahead of them being made generally available. 
 
-The headline feature developments made available are: 
+The new feature developments made available are: 
 
 - Initial [CMSIS5 and CMSIS-RTOS2](https://github.com/ARMmbed/mbed-os/tree/feature_cmsis5) upgrade
 - Integration points for [Hardware Acceleration of Symmetric and Asymmetric Encryption](https://github.com/ARMmbed/mbed-os/tree/feature_hw_crypto)
 - Introduction of native [LoRaWAN APIs](https://github.com/ARMmbed/mbed-os/tree/feature-lorawan) 
 
-mbed OS 5.3 supports 70 target platforms. 
+You can follow our development of these features - and contribute to them - by working with the feature branches linked above. 
+
+In addition, the main mbed OS 5.3 release includes a number of fixes since 5.2 and now supports 70 target platforms. 
 
 The following sections provide more details of these and other changes in this release. 
 
