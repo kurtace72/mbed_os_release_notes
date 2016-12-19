@@ -22,7 +22,7 @@ A first functional integration of the next generation CMSIS5 libraries, includin
 
 These enhancements include: 
 
-- Primitives and integration points for supporting TrustZone for Cortex-M and uVisor 
+- Primitives and integration points for supporting TrustZone for Cortex-M and mbed uVisor 
 - Improved RTOS kernel 
 - Support for ARM Compiler 6 
 - Many patches and modifications that mbed OS had made to CMSIS4 and CMSIS-RTOS now incorporated directly in to the CMSIS5 and CMSIS-RTOS2 codebases 
