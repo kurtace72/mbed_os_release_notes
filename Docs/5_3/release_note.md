@@ -1,4 +1,138 @@
 # mbed OS 5.3 releases
+## mbed OS 5.3.1 release
+
+We are pleased to announce the [mbed OS 5.3.1 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.3.1) is now available.
+
+This release includes target support for FRDM-KW41 and mbed Enabled Maker board with NINA-B1 and EVA-M8Q.
+There are also bug fixes and tool fixes. Please see below for a list of the changes.
+
+Here is a full list of all changes and fixes in this release.
+
+### Ports for Upcoming Targets
+
+[3241](https://github.com/ARMmbed/mbed-os/pull/3241): Add support for FRDM-KW41
+
+[3291](https://github.com/ARMmbed/mbed-os/pull/3291): Add mbed Enabled Maker board with NINA-B1 and EVA-M8Q
+
+
+### Fixes and Changes
+
+[3062](https://github.com/ARMmbed/mbed-os/pull/3062): TARGET_STM :USB device FS 
+
+[3114](https://github.com/ARMmbed/mbed-os/pull/3114): Fix issue with unrecognized uvision file types
+
+[3213](https://github.com/ARMmbed/mbed-os/pull/3213): STM32: Refactor us_ticker.c + hal_tick.c files
+
+[3274](https://github.com/ARMmbed/mbed-os/pull/3274): Pass toolchain path info to subprocesses
+
+[3283](https://github.com/ARMmbed/mbed-os/pull/3283): Remove remaining references to Curl from ARM pack manager
+
+[3288](https://github.com/ARMmbed/mbed-os/pull/3288): Dev spi asynch l0l1
+
+[3289](https://github.com/ARMmbed/mbed-os/pull/3289): Bug fix of initial value of interrupt edge in "gpio_irq_init" function.
+
+[3302](https://github.com/ARMmbed/mbed-os/pull/3302): STM32F4 AnalogIn - Clear VBATE and TSVREFE bits before configuring ADC channels
+
+[3305](https://github.com/ARMmbed/mbed-os/pull/3305): Support building mbed_critical.c with C++ compiler
+
+[3320](https://github.com/ARMmbed/mbed-os/pull/3320): STM32 - Add ADC_VREF label
+
+[3321](https://github.com/ARMmbed/mbed-os/pull/3321): no HSE available by default for NUCLEO_L432KC
+
+[3352](https://github.com/ARMmbed/mbed-os/pull/3352): ublox eva nina - fix line endings
+
+[3322](https://github.com/ARMmbed/mbed-os/pull/3322): DISCO_L053C8 doesn't support LSE
+
+[3345](https://github.com/ARMmbed/mbed-os/pull/3345): STM32 - Remove TIM_IT_UPDATE flag in HAL_Suspend/ResumeTick functions
+
+[3309](https://github.com/ARMmbed/mbed-os/pull/3309): [NUC472/M453] Fix CI failed tests
+
+[3157](https://github.com/ARMmbed/mbed-os/pull/3157): [Silicon Labs] Add support for EFR32MG1 wireless SoC
+
+[3301](https://github.com/ARMmbed/mbed-os/pull/3301): I2C - correct return values for write functions (docs) - part 1
+
+[3303](https://github.com/ARMmbed/mbed-os/pull/3303): Fix #2956 #2939 #2957 #2959 #2960: Add HAL_DeInit function in gpio_irq destructor
+
+[3304](https://github.com/ARMmbed/mbed-os/pull/3304): STM32L476: no HSE is present in NUCLEO and DISCO boards
+
+[3318](https://github.com/ARMmbed/mbed-os/pull/3318): Register map changes for RevG
+
+[3330](https://github.com/ARMmbed/mbed-os/pull/3330): Fix project profile parsing
+
+[3336](https://github.com/ARMmbed/mbed-os/pull/3336): Squashed 'features/FEATURE_LWIP/lwip-interface/lwip/' changes from d7
+
+[3349](https://github.com/ARMmbed/mbed-os/pull/3349): [Exporters] Fix generic ARM CPU target in uvision
+
+[3350](https://github.com/ARMmbed/mbed-os/pull/3350): [Exporter docs] index.json update instructions
+
+[3317](https://github.com/ARMmbed/mbed-os/pull/3317): NUCLEO_F429ZI has integrated LSE
+
+[3312](https://github.com/ARMmbed/mbed-os/pull/3312): K64F: SPI Asynch API implementation
+
+[3324](https://github.com/ARMmbed/mbed-os/pull/3324): Dev i2c common code
+
+[3331](https://github.com/ARMmbed/mbed-os/pull/3331): Enabled example export building for more examples
+
+[3347](https://github.com/ARMmbed/mbed-os/pull/3347): USB_4 : test OK with IAR ,GCC_ARM(limitation to ARM not needed)
+
+[3355](https://github.com/ARMmbed/mbed-os/pull/3355): IAR export will not fail in the absence of a CMSIS pack
+
+[3362](https://github.com/ARMmbed/mbed-os/pull/3362): Increase stack size in malloc test for Cortex-A
+
+[3369](https://github.com/ARMmbed/mbed-os/pull/3369): Add CAN2 missing pins for connector CN12
+
+[3377](https://github.com/ARMmbed/mbed-os/pull/3377): STM32 NUCLEO-L152RE Update system core clock to 32MHz
+
+[3378](https://github.com/ARMmbed/mbed-os/pull/3378): K66F: Enable LWIP feature
+
+[3382](https://github.com/ARMmbed/mbed-os/pull/3382): [MAX32620] Fix serial readable function.
+
+[3399](https://github.com/ARMmbed/mbed-os/pull/3399): NUCLEO_F103RB - Add SERIAL_FC feature
+
+[3409](https://github.com/ARMmbed/mbed-os/pull/3409): STM32L1 : map ST HAL assert into MBED assert
+
+[3416](https://github.com/ARMmbed/mbed-os/pull/3416): Rename i2c_api.c for STM32F1 targets to fix IAR exporter
+
+[3368](https://github.com/ARMmbed/mbed-os/pull/3368): CFSTORE fixes for building with DEBUG trace enabled
+
+[3348](https://github.com/ARMmbed/mbed-os/pull/3348): Fix frequency function of CAN driver.
+
+[3366](https://github.com/ARMmbed/mbed-os/pull/3366): NUCLEO_F412ZG - Add new platform
+
+[3379](https://github.com/ARMmbed/mbed-os/pull/3379): STM32F0 : map ST HAL assert into MBED assert
+
+[3385](https://github.com/ARMmbed/mbed-os/pull/3385): Remove deprecated flags args
+
+[3393](https://github.com/ARMmbed/mbed-os/pull/3393): ISR register never re-evaluated in HAL_DMA_PollForTransfer for STM32F4
+
+[3408](https://github.com/ARMmbed/mbed-os/pull/3408): STM32F7 : map ST HAL assert into MBED assert
+
+[3411](https://github.com/ARMmbed/mbed-os/pull/3411): STM32L0 : map ST HAL assert into MBED assert
+
+[3413](https://github.com/ARMmbed/mbed-os/pull/3413): Deduplicate IAR exporter templates and enable a few more targets
+
+[3414](https://github.com/ARMmbed/mbed-os/pull/3414): Remove unnecessary absolute paths from IAR and ARM compilers
+
+[3415](https://github.com/ARMmbed/mbed-os/pull/3415): [make exporters] Add quotes to echo statements
+
+[3424](https://github.com/ARMmbed/mbed-os/pull/3424): STM32F4 - FIX to add the update of hdma->State variable
+
+[3427](https://github.com/ARMmbed/mbed-os/pull/3427): Fix stm i2c slave
+
+[3429](https://github.com/ARMmbed/mbed-os/pull/3429): Fix stm i2c fix init
+
+[3434](https://github.com/ARMmbed/mbed-os/pull/3434): [NUC472/M453] Fix stuck in lp_ticker_init and other updates
+
+[3436](https://github.com/ARMmbed/mbed-os/pull/3436): Fix network echo test host scripts for Mac
+
+
+### Using the release
+
+You can fetch the mbed OS 5.3.1 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.3.1".
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/) or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
+## mbed OS 5.3.0
 This is the release note for mbed OS 5.3.0, summarizing the major enhancements in this version. 
 You can find the mbed OS 5.3.0 release on GitHub. 
 
