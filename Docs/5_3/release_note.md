@@ -1,5 +1,111 @@
 # mbed OS 5.3 releases
 
+## mbed OS 5.3.2 release
+
+We are pleased to announce the [mbed OS 5.3.2 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.3.2) is now available.
+
+This release includes:
+
+* New target support for UBLOX_EVK_NINA_B1.
+* A rename of the KSDK2 package to MCUXpresso.
+* CAN support for the DISCO_F303VC.
+* A number of bug fixes and improvements.
+
+Here is a full list of all changes and fixes in this release.
+
+### Ports for Upcoming Targets
+
+[3459](https://github.com/ARMmbed/mbed-os/pull/3459): Target: Add new target UBLOX_EVK_NINA_B1
+
+### Fixes and Changes
+
+[3430](https://github.com/ARMmbed/mbed-os/pull/3430): Fix ci shield eeprom test
+
+[3381](https://github.com/ARMmbed/mbed-os/pull/3381): STM32F1 : map ST HAL assert into MBED assert
+
+[3389](https://github.com/ARMmbed/mbed-os/pull/3389): STM32F2 : map ST HAL assert into MBED assert
+
+[3390](https://github.com/ARMmbed/mbed-os/pull/3390): STM32F3 : map ST HAL assert into MBED assert
+
+[3402](https://github.com/ARMmbed/mbed-os/pull/3402): nsapi - Fixed open/close issue in Socket
+
+[3410](https://github.com/ARMmbed/mbed-os/pull/3410): STM32L4 : map ST HAL assert into MBED assert
+
+[3422](https://github.com/ARMmbed/mbed-os/pull/3422): Enable CAN on DISCO_F303VC
+
+[3428](https://github.com/ARMmbed/mbed-os/pull/3428): Change slave address in I2C master slave asynch test
+
+[3442](https://github.com/ARMmbed/mbed-os/pull/3442): Dev stm i2c f1
+
+[3450](https://github.com/ARMmbed/mbed-os/pull/3450): Correctly filtering examples in test script
+
+[3460](https://github.com/ARMmbed/mbed-os/pull/3460): KSDK I2C: Update the return value to match the API documentation change
+
+[3478](https://github.com/ARMmbed/mbed-os/pull/3478): Delete TESTING.md
+
+[3477](https://github.com/ARMmbed/mbed-os/pull/3477): Delete COMMITTERS.md
+
+[3479](https://github.com/ARMmbed/mbed-os/pull/3479): Delete Toolchain_Profiles.md
+
+[3480](https://github.com/ARMmbed/mbed-os/pull/3480): Delete config_system.md
+
+[3481](https://github.com/ARMmbed/mbed-os/pull/3481): Delete memap.md
+
+[3339](https://github.com/ARMmbed/mbed-os/pull/3339): USB audio callback  rx and tx
+
+[3472](https://github.com/ARMmbed/mbed-os/pull/3472): [RZ/A1H]Fix TTB setting of RO_DATA area
+
+[3439](https://github.com/ARMmbed/mbed-os/pull/3439): Remove unused arguments from detect targets
+
+[3451](https://github.com/ARMmbed/mbed-os/pull/3451): Rename KSDK2 to MCUXpresso. This is the new name of this package
+
+[3469](https://github.com/ARMmbed/mbed-os/pull/3469): Remove invalid thread::start example
+
+[3391](https://github.com/ARMmbed/mbed-os/pull/3391): STM32F4 : map ST HAL assert into MBED assert
+
+[3454](https://github.com/ARMmbed/mbed-os/pull/3454): STM32: Refactor lp_ticker.c + rtc_api.c + sleep.c + rtc_api_hal.h files 
+
+[3457](https://github.com/ARMmbed/mbed-os/pull/3457): [ONME-2844] Supporting non-blocking connect()
+
+[3458](https://github.com/ARMmbed/mbed-os/pull/3458): [ONME-2844] Avoid option level collisions
+
+[3484](https://github.com/ARMmbed/mbed-os/pull/3484): Limiting the thread stack for parallel threads test
+
+[3486](https://github.com/ARMmbed/mbed-os/pull/3486): Move clean functionality out of the export api
+
+[3493](https://github.com/ARMmbed/mbed-os/pull/3493): Delete events.md
+
+[3494](https://github.com/ARMmbed/mbed-os/pull/3494): Delete ignoring_files_from_build.md
+
+[3476](https://github.com/ARMmbed/mbed-os/pull/3476): Removing default toolchain paths
+
+[3489](https://github.com/ARMmbed/mbed-os/pull/3489): NUCLEO_F103RB - Correct CAN and PWM alternate-functions
+
+[3405](https://github.com/ARMmbed/mbed-os/pull/3405): Repair the transmit mailbox (0,1,2) empty interrupt flag not clear BUG
+
+[3473](https://github.com/ARMmbed/mbed-os/pull/3473): Stm32f7 ethernet fix for IAR issue #3387
+
+[3475](https://github.com/ARMmbed/mbed-os/pull/3475): Delete BUILDING.md
+
+[3483](https://github.com/ARMmbed/mbed-os/pull/3483): Improve error message when exporting for make without a linker script
+
+[3490](https://github.com/ARMmbed/mbed-os/pull/3490): Fix deprecated Thread ctor usage in RTOS tests
+
+[3502](https://github.com/ARMmbed/mbed-os/pull/3502): MCUXpresso I2C: Handle 0 byte write
+
+[3500](https://github.com/ARMmbed/mbed-os/pull/3500): Update mbed-client-c version 3.0.4
+
+[3365](https://github.com/ARMmbed/mbed-os/pull/3365): [NUC472/M453] Support USB device
+
+
+### Using the release
+
+You can fetch the mbed OS 5.3.2 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.3.2".
+
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
+
 ## mbed OS 5.3.1 release
 
 We are pleased to announce the [mbed OS 5.3.1 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.3.1) is now available.
