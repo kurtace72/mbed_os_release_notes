@@ -1,5 +1,84 @@
 # mbed OS 5.3 releases
 
+## mbed OS 5.3.3 release
+
+We are pleased to announce that the [mbed OS 5.3.3 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.3.3) is now available.
+
+This release includes numerous fixes to code and tools (listed below).
+
+### Known Issues
+
+There are no known issues for this release.
+
+### Fixes and Changes
+
+[3470](https://github.com/ARMmbed/mbed-os/pull/3470): [RZ/A1H]Support RTX v4.80 for Cortex-A and a few Malloc API
+
+[3488](https://github.com/ARMmbed/mbed-os/pull/3488): Dev stm i2c v2 unitary functions
+
+[3492](https://github.com/ARMmbed/mbed-os/pull/3492): Fix #3463 CAN read() return value
+
+[3503](https://github.com/ARMmbed/mbed-os/pull/3503): [LPC15xx] Ensure that PWM=1 is resolved correctly
+
+[3504](https://github.com/ARMmbed/mbed-os/pull/3504): [LPC15xx] CAN implementation improvements
+
+[3513](https://github.com/ARMmbed/mbed-os/pull/3513): NUCLEO_F412ZG - Add platform in RTOS tests + build_travis
+
+[3514](https://github.com/ARMmbed/mbed-os/pull/3514): [NUC472/M453] Remove Tab in USB HAL
+
+[3518](https://github.com/ARMmbed/mbed-os/pull/3518): Preventing app_config from clobbering CLI macros
+
+[3526](https://github.com/ARMmbed/mbed-os/pull/3526): lwip - Fix static IP address issues with IPv4
+
+[3531](https://github.com/ARMmbed/mbed-os/pull/3531): Correctly format include paths for eclipse export
+
+[3537](https://github.com/ARMmbed/mbed-os/pull/3537): Remove default -m and -i options for project.py
+
+[3538](https://github.com/ARMmbed/mbed-os/pull/3538): Remove deprecated clean argument
+
+[3539](https://github.com/ARMmbed/mbed-os/pull/3539): NUCLEO_F412ZG - Add support of TRNG peripheral
+
+[3540](https://github.com/ARMmbed/mbed-os/pull/3540): STM: SPI: Initialize Rx in spi_master_write
+
+[3438](https://github.com/ARMmbed/mbed-os/pull/3438): K64F: Add support for SERIAL ASYNCH API
+
+[3521](https://github.com/ARMmbed/mbed-os/pull/3521): Repair the Emblocks exporer and rename to EmBitz
+
+[3550](https://github.com/ARMmbed/mbed-os/pull/3550): events - Fix overflow of timeout on STM32F4
+
+[3559](https://github.com/ARMmbed/mbed-os/pull/3559): exporters - group by directories in prj root
+
+[3519](https://github.com/ARMmbed/mbed-os/pull/3519): MCUXpresso: Fix ENET driver to enable interrupts after interrupt handler is set
+
+[3528](https://github.com/ARMmbed/mbed-os/pull/3528): Modify update command to directly edit the mbed-os.lib files for each example
+
+[3532](https://github.com/ARMmbed/mbed-os/pull/3532): Eclipse debug fixes (build w/ DEBUG=1 and load symbols)
+
+[3544](https://github.com/ARMmbed/mbed-os/pull/3544): STM32L4 deepsleep improvement
+
+[3546](https://github.com/ARMmbed/mbed-os/pull/3546): NUCLEO-F412ZG - Add CAN peripheral
+
+[3547](https://github.com/ARMmbed/mbed-os/pull/3547): Add support for ethernet-only configuration with Nanostack.
+
+[3551](https://github.com/ARMmbed/mbed-os/pull/3551): Fix I2C driver for RZ/A1H
+
+[3562](https://github.com/ARMmbed/mbed-os/pull/3562): Alphabetize UVision groups
+
+[3558](https://github.com/ARMmbed/mbed-os/pull/3558): K64F UART Asynch API: Fix synchronization issue
+
+[3563](https://github.com/ARMmbed/mbed-os/pull/3563): LPC4088 - Fix vector checksum
+
+[3567](https://github.com/ARMmbed/mbed-os/pull/3567): Dev stm32 F0 v1.7.0
+
+[3577](https://github.com/ARMmbed/mbed-os/pull/3577): Fixes linking errors when building with debug profile
+
+### Using the release
+
+You can fetch the mbed OS 5.3.3 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.3.3".
+
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
 ## mbed OS 5.3.2 release
 
 We are pleased to announce the [mbed OS 5.3.2 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.3.2) is now available.
