@@ -1,5 +1,95 @@
 # mbed OS 5.3 releases
 
+## mbed OS 5.3.4 release
+
+We are pleased to announce the [mbed OS 5.3.4 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.3.4) is now available.
+
+This release includes:
+
+* New target support for DISCO_F769NI, DELTA_DFCM_NNN50 and MAX32630FTHR.
+* Miscellaneous tool updates and fixes.
+
+### Known Issues
+
+No known issues for this release.
+
+### Ports for Upcoming Targets
+
+[3571](https://github.com/ARMmbed/mbed-os/pull/3571): DISCO_F769NI introduction
+
+[3605](https://github.com/ARMmbed/mbed-os/pull/3605): Add DELTA_DFCM_NNN50 platform
+
+[3640](https://github.com/ARMmbed/mbed-os/pull/3640): [MAX32630FTHR] Adding new platform
+
+### Fixes and Changes
+
+Here is a full list of all changes and fixes in this release.
+
+[3397](https://github.com/ARMmbed/mbed-os/pull/3397): Add uVisor support for the DISCO_F429ZI
+
+[3573](https://github.com/ARMmbed/mbed-os/pull/3573): fix failing RTC initialization for MTS_DRAGONFLY_F411RE
+
+[3575](https://github.com/ARMmbed/mbed-os/pull/3575): Dev stm factorize gpio
+
+[3584](https://github.com/ARMmbed/mbed-os/pull/3584): STM32: make PeripheralPins.h a common file
+
+[3583](https://github.com/ARMmbed/mbed-os/pull/3583): STM32F7 Cube FW new release v1.5.1
+
+[3534](https://github.com/ARMmbed/mbed-os/pull/3534): Turn on debugging by default when exporting. Remove optimizations for IAR and Uvision
+
+[3560](https://github.com/ARMmbed/mbed-os/pull/3560): Refactor scan resources to account for base_paths
+
+[3574](https://github.com/ARMmbed/mbed-os/pull/3574): Fix invalid assert in exporters
+
+[3578](https://github.com/ARMmbed/mbed-os/pull/3578): Target system - Inherit names from target parents
+
+[3586](https://github.com/ARMmbed/mbed-os/pull/3586): Linking to latest
+
+[3587](https://github.com/ARMmbed/mbed-os/pull/3587): Fixing toolchain executable not found error for build.py
+
+[3588](https://github.com/ARMmbed/mbed-os/pull/3588): arm-pack-manager - fix tracebacks
+
+[3594](https://github.com/ARMmbed/mbed-os/pull/3594): Allow user overrides of LINKER_SCRIPT Make variable
+
+[3599](https://github.com/ARMmbed/mbed-os/pull/3599): K22F: Enable TRNG
+
+[3600](https://github.com/ARMmbed/mbed-os/pull/3600): [toolchains] Refactor sys libs
+
+[3603](https://github.com/ARMmbed/mbed-os/pull/3603): Delete testing_mbed_OS_5.md
+
+[3604](https://github.com/ARMmbed/mbed-os/pull/3604): Renaming test_env.cpp in greentea to avoid warning
+
+[3608](https://github.com/ARMmbed/mbed-os/pull/3608): Exporters: make jinja engine strict
+
+[3612](https://github.com/ARMmbed/mbed-os/pull/3612): tests: Fix error on MacOS for udp_dtls_handshake test
+
+[3613](https://github.com/ARMmbed/mbed-os/pull/3613): README: Build info; Docs version updated
+
+[3614](https://github.com/ARMmbed/mbed-os/pull/3614): STM32: make PortNames.h a common file
+
+[3617](https://github.com/ARMmbed/mbed-os/pull/3617): EFM32GG: Fix GCC_ARM linker script
+
+[3618](https://github.com/ARMmbed/mbed-os/pull/3618): STM32: Move types definitions to a common file
+
+[3601](https://github.com/ARMmbed/mbed-os/pull/3601): Clean export dir
+
+[3630](https://github.com/ARMmbed/mbed-os/pull/3630): Delete mbed_targets.md
+
+[3631](https://github.com/ARMmbed/mbed-os/pull/3631): F3 CUBE update V1.7.0
+
+[3635](https://github.com/ARMmbed/mbed-os/pull/3635): STM32 I2C : Fix bug in i2c_byte_read function
+
+[3651](https://github.com/ARMmbed/mbed-os/pull/3651): Max32630 - fix LED4
+
+
+### Using the release
+
+You can fetch the mbed OS 5.3.4 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.3.4".
+
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
+
 ## mbed OS 5.3.3 release
 
 We are pleased to announce that the [mbed OS 5.3.3 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.3.3) is now available.
