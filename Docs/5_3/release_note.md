@@ -1,5 +1,73 @@
 # mbed OS 5.3 releases
 
+## mbed OS 5.3.5 release
+
+We are pleased to announce that the [mbed OS 5.3.5 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.3.5) is now available.
+
+Here is a full list of changes and fixes in this release.
+
+### Fixes and Changes
+
+[3432](https://github.com/ARMmbed/mbed-os/pull/3432): Target STM USBHOST support
+
+[3181](https://github.com/ARMmbed/mbed-os/pull/3181): NUCLEO_F207ZG extending PeripheralPins.c: all available alternate functions can be used now
+
+[3624](https://github.com/ARMmbed/mbed-os/pull/3624): Fix Stack stats by running the test command with "-DMBED_HEAP_STATS_ENABLED=1"
+
+[3626](https://github.com/ARMmbed/mbed-os/pull/3626): NUCLEO_F412ZG : Add USB Device +Host
+
+[3628](https://github.com/ARMmbed/mbed-os/pull/3628): Fix warnings
+
+[3629](https://github.com/ARMmbed/mbed-os/pull/3629): STM32: L0 LL layer
+
+[3632](https://github.com/ARMmbed/mbed-os/pull/3632): IDE Export support for platform VK_RZ_A1H
+
+[3642](https://github.com/ARMmbed/mbed-os/pull/3642): Missing IRQ pin fix for platform VK_RZ_A1H
+
+[3653](https://github.com/ARMmbed/mbed-os/pull/3653): Adding fatal error detection to toolchains
+
+[3661](https://github.com/ARMmbed/mbed-os/pull/3661): [Exporters] Add core to uvision exporter template
+
+[3664](https://github.com/ARMmbed/mbed-os/pull/3664): Fix ncs36510 sleep definitions
+
+[3655](https://github.com/ARMmbed/mbed-os/pull/3655): [STM32F4] Modify folder structure
+
+[3657](https://github.com/ARMmbed/mbed-os/pull/3657): [STM32L4] Modify folder structure
+
+[3658](https://github.com/ARMmbed/mbed-os/pull/3658): [STM32F3] Modify folder structure
+
+[3685](https://github.com/ARMmbed/mbed-os/pull/3685): STM32: I2C: reset state machine
+
+[3689](https://github.com/ARMmbed/mbed-os/pull/3689): Updated to allow for new directory structure for mbed-dev source.
+
+[3718](https://github.com/ARMmbed/mbed-os/pull/3718): Fixing uvisor defines to fix build issues
+
+[3692](https://github.com/ARMmbed/mbed-os/pull/3692): uVisor: Standardize available legacy heap and stack
+
+[3621](https://github.com/ARMmbed/mbed-os/pull/3621): Fix for #2884, LPC824: export to LPCXpresso, target running with wron
+
+[3649](https://github.com/ARMmbed/mbed-os/pull/3649): [STM32F7] Modify folder structure 
+
+[3669](https://github.com/ARMmbed/mbed-os/pull/3669): Adding case insensitive 'error' detection
+
+[3695](https://github.com/ARMmbed/mbed-os/pull/3695): Enforce device_name is valid in targets.json
+
+[3717](https://github.com/ARMmbed/mbed-os/pull/3717): Add IAR export support for NUCLEO_F207ZG
+
+[3723](https://github.com/ARMmbed/mbed-os/pull/3723): NCS36510: spi_format function bug fix
+
+[3727](https://github.com/ARMmbed/mbed-os/pull/3727): Fix access before variable defined bug in test_api
+
+[3708](https://github.com/ARMmbed/mbed-os/pull/3708): [NUC472/M453] Fix USB EP setting error in USBAudio
+
+
+### Using the release
+
+You can fetch the mbed OS 5.3.5 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.3.5".
+
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
 ## mbed OS 5.3.4 release
 
 We are pleased to announce the [mbed OS 5.3.4 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.3.4) is now available.
