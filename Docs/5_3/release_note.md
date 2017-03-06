@@ -1,5 +1,37 @@
 # mbed OS 5.3 releases
 
+## mbed OS 5.3.6 release
+We are pleased to announce the [mbed OS 5.3.6 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.3.6) is now available.
+
+This release includes a number of bug fixes to improve stability. 
+
+### Fixes and Changes
+
+[3590](https://github.com/ARMmbed/mbed-os/pull/3590): [NUC472/M453] Export IAR project and other bugfixes
+
+[3740](https://github.com/ARMmbed/mbed-os/pull/3740): STM32L4 HAL update for RTC Wake Up Timer
+
+[3739](https://github.com/ARMmbed/mbed-os/pull/3739): STM32F7 : remove multiple HSE_VALUE define value
+
+[3759](https://github.com/ARMmbed/mbed-os/pull/3759): STM32: spi_frequency table index fix
+
+[3760](https://github.com/ARMmbed/mbed-os/pull/3760): Fix #3756 for 64 bytes transfers
+
+[3779](https://github.com/ARMmbed/mbed-os/pull/3779): NCS36510: Fix the sporadic semaphore timing issue
+
+[3806](https://github.com/ARMmbed/mbed-os/pull/3806): NXP KL43Z/KL27Z: fix spi format bits check
+
+[3814](https://github.com/ARMmbed/mbed-os/pull/3814): NCS36510: I2C idle delay of 1us
+
+[3803](https://github.com/ARMmbed/mbed-os/pull/3803): Bug fix of initial value of interrupt edge in "gpio_irq_init" again
+
+### Using the release
+
+You can fetch the mbed OS 5.3.6 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.3.6".
+
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
 ## mbed OS 5.3.5 release
 
 We are pleased to announce that the [mbed OS 5.3.5 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.3.5) is now available.
