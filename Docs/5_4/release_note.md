@@ -18,6 +18,8 @@ The filesystem is integrated with the C standard libraries of the ARM, IAR and G
 
 The release also includes early access to the mbed OS bootloader, so partners can add support for their targets' flash controllers. This forms part of the support for the upcoming mbed Cloud Update service, which allows managing device firmware update campaigns.
 
+To read the documentation, see [file system](https://docs.mbed.com/docs/mbed-os-api-reference/en/latest/APIs/storage/filesystem/) and [bootloader](https://docs.mbed.com/docs/mbed-os-handbook/en/latest/advanced/bootloader/).
+
 ##Connectivity
 
 mbed OS 5.4 uses the recently certified mbed Thread 1.1 stack to provide solutions for building end nodes and border routers.
