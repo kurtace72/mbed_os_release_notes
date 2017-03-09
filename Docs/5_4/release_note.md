@@ -46,7 +46,7 @@ We will continue to add new targets in our biweekly releases as partners introdu
 
 ##Fixes and changes
 
-Please see the mbed-os GitHub repository referenced below for a full list of changes introduced in this release. You can find a list of known issues [here](https://github.com/ARMmbed/mbed_os_release_notes/blob/master/Docs/5_3/known_issues.md).
+Please see the mbed-os GitHub repository referenced below for a full list of changes introduced in this release. You can find a list of known issues [here](https://github.com/ARMmbed/mbed_os_release_notes/blob/master/Docs/5_4/known_issues.md).
 
 ##Using the release
 
