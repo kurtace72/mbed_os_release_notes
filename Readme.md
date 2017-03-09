@@ -2,6 +2,4 @@
 
 These are the release documents for mbed OS.
 
-The current version is [5.3](Docs/5_3/release_note.md).
-
-You can also view the release note for [5.2](Docs/5_2/release_note.md) and [5.1](Docs/5_1/release.md).
+The current version is [5.4](Docs/5_4/release_note.md).
