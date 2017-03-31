@@ -1,5 +1,76 @@
 # mbed OS 5.4 Releases
 
+## mbed OS 5.4.2 release
+We are pleased to announce the [mbed OS 5.4.2 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.2) is now available.
+
+This release includes support for the new target EFM32PG12, some driver updates for NUC472/M453, an update for STM32 to Cube version v1.6.0 and TLS hw acceleration (AES ECB) for NUCLEO_F439ZI. There are also bug fixes and improvements to the tools and mbed-os core.
+
+### Known Issues
+
+The following list of known issues applies to this release:
+None
+
+Here is a full list of all changes and fixes in this release.
+
+### Ports for Upcoming Targets
+
+[3934](https://github.com/ARMmbed/mbed-os/pull/3934): [Silicon Labs] Update to HAL and devices
+
+### Fixes and Changes
+
+[3691](https://github.com/ARMmbed/mbed-os/pull/3691): [TLS/hw acceleration] AES ECB for NUCLEO_F439ZI
+
+[3827](https://github.com/ARMmbed/mbed-os/pull/3827): Correct return values for `I2C::write(int, const char*, int, bool)`
+
+[3862](https://github.com/ARMmbed/mbed-os/pull/3862): Trap earlier when a Thread instance is reused
+
+[3869](https://github.com/ARMmbed/mbed-os/pull/3869): [NCS36510] Default range changed from 0 to 950mV - ADC 
+
+[3893](https://github.com/ARMmbed/mbed-os/pull/3893): [STM32F7] Update STM32 Cube version v1.6.0
+
+[3895](https://github.com/ARMmbed/mbed-os/pull/3895): Use PATH env variable when GCC found in PATH
+
+[3917](https://github.com/ARMmbed/mbed-os/pull/3917): Fix mistake register setting in serial_format()
+
+[3931](https://github.com/ARMmbed/mbed-os/pull/3931): ARM Pack Manager improvements
+
+[3927](https://github.com/ARMmbed/mbed-os/pull/3927): [DELTA_DFBM_NQ620] Add RC calibration setting and revise mbed_overrides.c
+
+[3747](https://github.com/ARMmbed/mbed-os/pull/3747): bd: Add randomness to block device test and more debug friendly output
+
+[3918](https://github.com/ARMmbed/mbed-os/pull/3918): [NUC472/M453] Support unique locally administered MAC address and other driver updates
+
+[3920](https://github.com/ARMmbed/mbed-os/pull/3920): Adjust heap size to work for both tls-client and mbed-client
+
+[3924](https://github.com/ARMmbed/mbed-os/pull/3924): Don't set the build_dir to anything on export
+
+[3933](https://github.com/ARMmbed/mbed-os/pull/3933): #3593 Add template entry to fix exported project build error
+
+[3953](https://github.com/ARMmbed/mbed-os/pull/3953): OS2 tests minor updates for STM32
+
+[3969](https://github.com/ARMmbed/mbed-os/pull/3969): [NUCLEO_F302R8] Add missing PB_8/PB_9 CAN pins
+
+[3975](https://github.com/ARMmbed/mbed-os/pull/3975): [NSAPI/lwIP] Free held netbuf on close
+
+[3976](https://github.com/ARMmbed/mbed-os/pull/3976): mbed-coap error fixes merge to mbed OS
+
+[3968](https://github.com/ARMmbed/mbed-os/pull/3968): [Greentea] Fix test code mbed-os-tests-mbed_hal-flash
+
+[3949](https://github.com/ARMmbed/mbed-os/pull/3949): Fix C declaration of dir functions and types
+
+[3922](https://github.com/ARMmbed/mbed-os/pull/3922): Fix/improve error parsing from API messages
+
+[3939](https://github.com/ARMmbed/mbed-os/pull/3939): Update mbed trace
+
+
+### Using the release
+
+You can fetch the mbed OS 5.4.2 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.4.2".
+
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
+
 ## mbed OS 5.4.1 release
 
 We are pleased to announce the [mbed OS 5.4.1 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.1) is now available.
