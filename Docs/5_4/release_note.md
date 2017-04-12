@@ -1,5 +1,78 @@
 # mbed OS 5.4 Releases
 
+## mbed OS 5.4.3 release
+We are pleased to announce the [mbed OS 5.4.3 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.3) is now available.
+This release includes new target support for nRf52840 and UBLOX_C030. There are also a number of bug fixes to improve the stability of 
+the code and improvements to the tools.
+
+### Known issues
+
+The following list of known issues apply to this release:
+
+None
+
+Here is a full list of all changes and fixes in this release.
+
+### Ports for upcoming targets
+
+[3841](https://github.com/ARMmbed/mbed-os/pull/3841): Add nRf52840 target
+
+[3992](https://github.com/ARMmbed/mbed-os/pull/3992): Introducing UBLOX_C030 platform
+
+### Fixes and changes
+
+[3951](https://github.com/ARMmbed/mbed-os/pull/3951): [NUCLEO_F303ZE] Correct ARDUINO pin
+
+[4021](https://github.com/ARMmbed/mbed-os/pull/4021): Fix a macro to detect when RTOS was in use for the NRF52840_DK
+
+[3979](https://github.com/ARMmbed/mbed-os/pull/3979): [KW24D] Add missing SPI defines and Arduino connector definitions
+
+[3990](https://github.com/ARMmbed/mbed-os/pull/3990): [UBLOX_C027] Construct a ticker-based wait, rather than calling wait_ms(), in the C027 board startup code
+
+[4000](https://github.com/ARMmbed/mbed-os/pull/4000): Add some type checking of configs
+
+[4003](https://github.com/ARMmbed/mbed-os/pull/4003): Fix OBOE in async serial tx for NRF52 target, fix #4002
+
+[4012](https://github.com/ARMmbed/mbed-os/pull/4012): [STM32] Correct I2C master error handling
+
+[4020](https://github.com/ARMmbed/mbed-os/pull/4020): [NUCLEO_L011K4] Remove unsupported toolchain files
+
+[4046](https://github.com/ARMmbed/mbed-os/pull/4046): [USBHOST] Fix device disconnection from hub during hub port reset
+
+[4049](https://github.com/ARMmbed/mbed-os/pull/4049): [Tools] Turn off page alignment of sections
+
+[4065](https://github.com/ARMmbed/mbed-os/pull/4065): [K66F] Move bss section to m_data_2 Section
+
+[4014](https://github.com/ARMmbed/mbed-os/pull/4014): [Issue 3763] Reduce heap allocation in the GCC linker file
+
+[4030](https://github.com/ARMmbed/mbed-os/pull/4030): [STM32L0] Reduce IAR heap and stack size for small targets
+
+[4060](https://github.com/ARMmbed/mbed-os/pull/4060): [lpc1768] Remove invalid use of IP_SOF_BROADCAST_RECV option
+
+[4070](https://github.com/ARMmbed/mbed-os/pull/4070): Elide adding regions to profile when empty
+
+[4072](https://github.com/ARMmbed/mbed-os/pull/4072): Remove superfluous space
+
+[4085](https://github.com/ARMmbed/mbed-os/pull/4085): Fix mbed-cli issue #468 and add LPCTargetCode.lpc_patch to POST_BINARY_WHITELIST
+
+[4101](https://github.com/ARMmbed/mbed-os/pull/4101): Modify semihost_disabledebug() to support more interface FW revs
+
+[4109](https://github.com/ARMmbed/mbed-os/pull/4109): [NUCLEO_L476RG] Make minor serial pin update
+
+[3911](https://github.com/ARMmbed/mbed-os/pull/3911): [IAR exporter] Extend debugger settings template with modifiable options needed for Nordic targets
+
+[3982](https://github.com/ARMmbed/mbed-os/pull/3982): [Ticker] Fix kl25z bug for handling events in the past
+
+[4112](https://github.com/ARMmbed/mbed-os/pull/4112): Only link in LPC17xx ethernet ISR as needed
+
+[4098](https://github.com/ARMmbed/mbed-os/pull/4098): Raise error when mbed_app.json is bad
+
+### Using the release
+
+You can fetch the mbed OS 5.4.3 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.4.3".
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
 ## mbed OS 5.4.2 release
 We are pleased to announce the [mbed OS 5.4.2 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.2) is now available.
 
