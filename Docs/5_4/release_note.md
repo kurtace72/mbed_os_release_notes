@@ -1,5 +1,97 @@
 # mbed OS 5.4 Releases
 
+## mbed OS 5.4.4 release
+We are pleased to announce the [mbed OS 5.4.4 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.4) is now available.
+This release includes a reworking of the internal ADC channels code for numerous STM boards, a new callback API for CAN,
+support for the bootloader and FlashIAP for NUC472/M453, plus numerous core software and tools bug fixes to improve and
+further stabilize the codebase.
+
+### Known Issues
+
+The following list of known issues apply to this release:
+
+None
+
+### Ports for Upcoming Targets
+
+None
+
+Here is a full list of all changes and fixes in this release.
+
+### Fixes and Changes
+
+[4008](https://github.com/ARMmbed/mbed-os/pull/4008): [NUC472/M453] Support bootloader and FlashIAP
+
+[4102](https://github.com/ARMmbed/mbed-os/pull/4102): Add SCL and SDA defs for I2C[0-2]; redefine I2C_[SCL,SDA] to I2C2
+
+[4106](https://github.com/ARMmbed/mbed-os/pull/4106): Fix a scoping typo in toolchains
+
+[4118](https://github.com/ARMmbed/mbed-os/pull/4118): [STM32F4] Rework internal ADC channels
+
+[4126](https://github.com/ARMmbed/mbed-os/pull/4126): [STM32F4] Remove SERIAL_TX and SERIAL_RX from available pins
+
+[4069](https://github.com/ARMmbed/mbed-os/pull/4069): Update `gnuarmeclipse` to preprocess linker scripts
+
+[4107](https://github.com/ARMmbed/mbed-os/pull/4107): Allow configuration of artifact name in app config
+
+[4122](https://github.com/ARMmbed/mbed-os/pull/4122): Fix compiler warning in `mbed_retarget.cpp`
+
+[4123](https://github.com/ARMmbed/mbed-os/pull/4123): Update CAN to new Callback API
+
+[4148](https://github.com/ARMmbed/mbed-os/pull/4148): Revert "STM32F4 Internal ADC channels rework"
+
+[4152](https://github.com/ARMmbed/mbed-os/pull/4152): [STM32F4] Rework internal ADC channels
+
+[4074](https://github.com/ARMmbed/mbed-os/pull/4074): [Silicon Labs] Update pinout
+
+[4133](https://github.com/ARMmbed/mbed-os/pull/4133): [U-BLOX_C030] Default XTAL is now 12MHz onboard. Option to use Debug 8MHz
+
+[4141](https://github.com/ARMmbed/mbed-os/pull/4141): Fix `mbed_board.c` compiler warning
+
+[4168](https://github.com/ARMmbed/mbed-os/pull/4168): Generate GNU ARM Eclipse `.mbedignore` file with jinja2
+
+[4170](https://github.com/ARMmbed/mbed-os/pull/4170): Fix include paths for Windows builds
+
+[4173](https://github.com/ARMmbed/mbed-os/pull/4173): Fix Traceback in CMSIS export
+
+[4142](https://github.com/ARMmbed/mbed-os/pull/4142): [EFM32] Fixed `pwmout_all_inactive` being inversed
+
+[3888](https://github.com/ARMmbed/mbed-os/pull/3888): [Tools] Add new examples
+
+[4016](https://github.com/ARMmbed/mbed-os/pull/4016): [NRF5] Fix rtc overflow-while-set-timestamp issue
+
+[4031](https://github.com/ARMmbed/mbed-os/pull/4031): [STM32] Increase IAR heap size for big RAM targets
+
+[4129](https://github.com/ARMmbed/mbed-os/pull/4129): Remove old filesystem test
+
+[4137](https://github.com/ARMmbed/mbed-os/pull/4137): [MCUXpresso] Update ARM linker files to eliminate reserving RAM for stack and heap
+
+[4150](https://github.com/ARMmbed/mbed-os/pull/4150): Move config system into its own folder and refactor header generation
+
+[4171](https://github.com/ARMmbed/mbed-os/pull/4171): Fix typo in `lpcxpresso` exporter template
+
+[4172](https://github.com/ARMmbed/mbed-os/pull/4172): Fail IAR exports without linker scripts with `NotSupportedException`
+
+[4176](https://github.com/ARMmbed/mbed-os/pull/4176): [STM32L4] Rework internal ADC channels
+
+[4184](https://github.com/ARMmbed/mbed-os/pull/4184): [Events] Remove strict-aliasing warning
+
+[4192](https://github.com/ARMmbed/mbed-os/pull/4192): Fix gcc [-Wsign-compare] warning
+
+[4154](https://github.com/ARMmbed/mbed-os/pull/4154): [STM32F7] Rework internal ADC channels
+
+[4174](https://github.com/ARMmbed/mbed-os/pull/4174): [NRF52840] Fix rtc overflow-while-set-timestamp issue
+
+[4180](https://github.com/ARMmbed/mbed-os/pull/4180): [UBLOX_C030] Create target hierarchy for the specific versions of the C030 board
+
+[4153](https://github.com/ARMmbed/mbed-os/pull/4153): [STM32F2] Rework internal ADC channels
+
+### Using the release
+
+You can fetch the mbed OS 5.4.4 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.4.4".
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/) or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
 ## mbed OS 5.4.3 release
 We are pleased to announce the [mbed OS 5.4.3 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.3) is now available.
 This release includes new target support for nRf52840 and UBLOX_C030. There are also a number of bug fixes to improve the stability of 
@@ -265,7 +357,7 @@ We will continue to add new targets in our biweekly releases as partners introdu
 
 Please see the mbed-os GitHub repository referenced below for a full list of changes introduced in this release. You can find a list of known issues [here](https://github.com/ARMmbed/mbed_os_release_notes/blob/master/Docs/5_4/known_issues.md).
 
-##Using the release
+## Using the release
 
 You can fetch the mbed OS 5.4.0 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository using the tag “mbed-os-5.4.0”.
 
