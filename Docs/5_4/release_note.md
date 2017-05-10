@@ -1,5 +1,62 @@
 # mbed OS 5.4 Releases
 
+## mbed OS 5.4.5 release
+We are pleased to announce the [mbed OS 5.4.5 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.5) is now available.
+This release includes exporter support for Visual Studio Code and Qt Creator Generic project, LWIP support for LPC4088,
+some tool updates, plus a number of bug fixes and enhancements to improve the quality of the codebase.
+
+### Known Issues
+
+None
+
+Here is a full list of all changes and fixes in this release.
+
+### Ports for Upcoming Targets
+
+### Fixes and Changes
+
+[4059](https://github.com/ARMmbed/mbed-os/pull/4059): [Silicon Labs] Rename targets
+
+[4115](https://github.com/ARMmbed/mbed-os/pull/4115): Add support for Qt Creator Generic project export and associated Makefile
+
+[3915](https://github.com/ARMmbed/mbed-os/pull/3915): Add Visual Studio Code exporter
+
+[4205](https://github.com/ARMmbed/mbed-os/pull/4205): [Tests] Race test - add `NOT_SUPPORTED` for single threaded environment
+
+[4187](https://github.com/ARMmbed/mbed-os/pull/4187): [NCS36510] Reduce default heap size allocated by IAR to 1/4 of RAM
+
+[4145](https://github.com/ARMmbed/mbed-os/pull/4145): [Test] Add nanostack to examples.json file
+
+[4093](https://github.com/ARMmbed/mbed-os/pull/4093): [Update.py] New feature - update a branch instead of a fork, and make general improvements
+
+[4225](https://github.com/ARMmbed/mbed-os/pull/4225): Fix missing `device_name` for xDot, and remove `progen`
+
+[4243](https://github.com/ARMmbed/mbed-os/pull/4243): [Config] Add new line to config header file
+
+[4251](https://github.com/ARMmbed/mbed-os/pull/4251): Fix C++11 build error with u-blox EVK-ODIN-W2
+
+[4236](https://github.com/ARMmbed/mbed-os/pull/4236): [STM32] Fix warning related to `__packed` redefinition
+
+[4224](https://github.com/ARMmbed/mbed-os/pull/4224): Add `mbed new .` output to export
+
+[4190](https://github.com/ARMmbed/mbed-os/pull/4190): LPC4088: Enable LWIP feature
+
+[4136](https://github.com/ARMmbed/mbed-os/pull/4136): Change behavior when bootloader is specified but does not exist
+
+[3881](https://github.com/ARMmbed/mbed-os/pull/3881): Remove debug links to printf/exit in NDEBUG builds
+
+[4260](https://github.com/ARMmbed/mbed-os/pull/4260): Inherit Xadow M0 target from LPC11U35_501
+
+[4249](https://github.com/ARMmbed/mbed-os/pull/4249): Add consistent button names across targets
+
+[4254](https://github.com/ARMmbed/mbed-os/pull/4254): Remove unused variable in `TARGET_NXP/lpc17_emac.c`
+
+### Using the release
+
+You can fetch the mbed OS 5.4.5 release from the [`mbed-os` GitHub](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.4.5".
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
 ## mbed OS 5.4.4 release
 We are pleased to announce the [mbed OS 5.4.4 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.4) is now available.
 This release includes a reworking of the internal ADC channels code for numerous STM boards, a new callback API for CAN,
