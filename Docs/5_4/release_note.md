@@ -1,19 +1,11 @@
 # mbed OS 5.4 Releases
 
 ## mbed OS 5.4.5 release
-We are pleased to announce the [mbed OS 5.4.5 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.5) is now available.
-This release includes exporter support for Visual Studio Code and Qt Creator Generic project, LWIP support for LPC4088,
-some tool updates, plus a number of bug fixes and enhancements to improve the quality of the codebase.
-
-### Known Issues
-
-None
+We are pleased to announce the [mbed OS 5.4.5 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.5) is now available. This release includes exporter support for Visual Studio Code and Qt Creator Generic project, LWIP support for LPC4088, some tool updates, plus a number of bug fixes and enhancements to improve the quality of the codebase.
 
 Here is a full list of all changes and fixes in this release.
 
-### Ports for Upcoming Targets
-
-### Fixes and Changes
+### Fixes and changes
 
 [4059](https://github.com/ARMmbed/mbed-os/pull/4059): [Silicon Labs] Rename targets
 
@@ -53,29 +45,17 @@ Here is a full list of all changes and fixes in this release.
 
 ### Using the release
 
-You can fetch the mbed OS 5.4.5 release from the [`mbed-os` GitHub](https://github.com/ARMmbed/mbed-os) repository,
-using the tag "mbed-os-5.4.5".
+You can fetch the mbed OS 5.4.5 release from the [`mbed-os` GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.5".
+
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
+
 ## mbed OS 5.4.4 release
-We are pleased to announce the [mbed OS 5.4.4 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.4) is now available.
-This release includes a reworking of the internal ADC channels code for numerous STM boards, a new callback API for CAN,
-support for the bootloader and FlashIAP for NUC472/M453, plus numerous core software and tools bug fixes to improve and
-further stabilize the codebase.
-
-### Known Issues
-
-The following list of known issues apply to this release:
-
-None
-
-### Ports for Upcoming Targets
-
-None
+We are pleased to announce the [mbed OS 5.4.4 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.4) is now available. This release includes a reworking of the internal ADC channels code for numerous STM boards, a new callback API for CAN, support for the bootloader and FlashIAP for NUC472/M453, plus numerous core software and tools bug fixes to improve and further stabilize the codebase.
 
 Here is a full list of all changes and fixes in this release.
 
-### Fixes and Changes
+### Fixes and changes
 
 [4008](https://github.com/ARMmbed/mbed-os/pull/4008): [NUC472/M453] Support bootloader and FlashIAP
 
@@ -145,20 +125,13 @@ Here is a full list of all changes and fixes in this release.
 
 ### Using the release
 
-You can fetch the mbed OS 5.4.4 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
-using the tag "mbed-os-5.4.4".
+You can fetch the mbed OS 5.4.4 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.4".
+
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/) or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
+
 ## mbed OS 5.4.3 release
-We are pleased to announce the [mbed OS 5.4.3 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.3) is now available.
-This release includes new target support for nRf52840 and UBLOX_C030. There are also a number of bug fixes to improve the stability of 
-the code and improvements to the tools.
-
-### Known issues
-
-The following list of known issues apply to this release:
-
-None
+We are pleased to announce the [mbed OS 5.4.3 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.3) is now available. This release includes new target support for nRf52840 and UBLOX_C030. There are also a number of bug fixes to improve the stability of  the code and improvements to the tools.
 
 Here is a full list of all changes and fixes in this release.
 
@@ -218,27 +191,23 @@ Here is a full list of all changes and fixes in this release.
 
 ### Using the release
 
-You can fetch the mbed OS 5.4.3 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
-using the tag "mbed-os-5.4.3".
+You can fetch the mbed OS 5.4.3 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.3".
+
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
 
 ## mbed OS 5.4.2 release
 We are pleased to announce the [mbed OS 5.4.2 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.2) is now available.
 
 This release includes support for the new target EFM32PG12, some driver updates for NUC472/M453, an update for STM32 to Cube version v1.6.0 and TLS hw acceleration (AES ECB) for NUCLEO_F439ZI. There are also bug fixes and improvements to the tools and mbed-os core.
 
-### Known Issues
-
-The following list of known issues applies to this release:
-None
-
 Here is a full list of all changes and fixes in this release.
 
-### Ports for Upcoming Targets
+### Ports for upcoming targets
 
 [3934](https://github.com/ARMmbed/mbed-os/pull/3934): [Silicon Labs] Update to HAL and devices
 
-### Fixes and Changes
+### Fixes and changes
 
 [3691](https://github.com/ARMmbed/mbed-os/pull/3691): [TLS/hw acceleration] AES ECB for NUCLEO_F439ZI
 
@@ -284,11 +253,9 @@ Here is a full list of all changes and fixes in this release.
 
 [3939](https://github.com/ARMmbed/mbed-os/pull/3939): Update mbed trace
 
-
 ### Using the release
 
-You can fetch the mbed OS 5.4.2 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository,
-using the tag "mbed-os-5.4.2".
+You can fetch the mbed OS 5.4.2 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.2".
 
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
@@ -299,7 +266,7 @@ We are pleased to announce the [mbed OS 5.4.1 release](https://github.com/ARMmbe
 
 This release includes an update of mbed TLS to version 2.4.2, bringing essential and critical security patches, including a fix for CVE-2017-2784. For core mbed OS, there are a number of bug fixes to improve the stability of the code and improvements to the tools. 
 
-### Fixes and Changes
+### Fixes and changes
 
 [3716](https://github.com/ARMmbed/mbed-os/pull/3716): fix for issue #3715: correction in startup files for ARM and IAR, alignment of system_stm32f429xx.c files
 
@@ -355,12 +322,12 @@ This release includes an update of mbed TLS to version 2.4.2, bringing essential
 
 [3829](https://github.com/ARMmbed/mbed-os/pull/3829): can_write(): return error code when no tx mailboxes are available 
 
-
 ### Using the release
 
 You can fetch the mbed OS 5.4.1 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.1".
 
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
 
 ## mbed OS 5.4.0 release
  
@@ -412,7 +379,7 @@ We will continue to add new targets in our biweekly releases as partners introdu
 
 ## Fixes and changes
 
-Please see the mbed-os GitHub repository referenced below for a full list of changes introduced in this release. You can find a list of known issues [here](https://github.com/ARMmbed/mbed_os_release_notes/blob/master/Docs/5_4/known_issues.md).
+Please see the `mbed-os` GitHub repository referenced below for a full list of changes introduced in this release. You can find a list of known issues [here](https://github.com/ARMmbed/mbed_os_release_notes/blob/master/Docs/5_4/known_issues.md).
 
 ## Using the release
 
