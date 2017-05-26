@@ -1,5 +1,74 @@
 # mbed OS 5.4 Releases
 
+## mbed OS 5.4.6 release
+We are pleased to announce the [mbed OS 5.4.6 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.6) is now available. This release includes new target support for DISCO_L072CZ_LRWAN1 and RO359B. There is an update of the u-blox ODIN driver to v1.3 rc2
+and an update of the STM32 F1 STM32 cube (SDK) to v1.5.0. There are also a number of bug fixes and tool enhancements to improve the
+quality and stability of the codebase.
+
+### Known Issues
+
+The following list of known issues apply to this release:
+
+None
+
+Here is a full list of all changes and fixes in this release.
+
+### Ports for Upcoming Targets
+
+[4256](https://github.com/ARMmbed/mbed-os/pull/4256): DISCO_L072CZ_LRWAN1: Add a new platform
+
+[4302](https://github.com/ARMmbed/mbed-os/pull/4302): [RO359B] Add platform
+
+### Fixes and Changes
+
+[4270](https://github.com/ARMmbed/mbed-os/pull/4270): ODIN: Disable sleep because it's not compatible with Wi-Fi driver
+
+[4238](https://github.com/ARMmbed/mbed-os/pull/4238): lwIP - power up EMAC before reading its settings
+
+[4149](https://github.com/ARMmbed/mbed-os/pull/4149): STM32F3: Handle USB ISTR and endpoint registers correctly
+
+[4276](https://github.com/ARMmbed/mbed-os/pull/4276): Avoid 03/05 intel-hex records for Nordic devices
+
+[4289](https://github.com/ARMmbed/mbed-os/pull/4289): LPC4088: Add "LPC4088Code.binary_hook" to the white list of the embit
+
+[4309](https://github.com/ARMmbed/mbed-os/pull/4309): Limit ISR stack to 4k on NUCLEO-F429ZI
+
+[4308](https://github.com/ARMmbed/mbed-os/pull/4308): Fix NVIC_SetVector type in HAL for MAX32630FTHR
+
+[4226](https://github.com/ARMmbed/mbed-os/pull/4226): [WIZnet][W7500] Add support for mbed OS 5
+
+[4241](https://github.com/ARMmbed/mbed-os/pull/4241): [NUC472/M453] Fix serial error with sync/async calls interlaced
+
+[4245](https://github.com/ARMmbed/mbed-os/pull/4245): [nRF5 + nRF52840]: Merge nRF52840 to [NRF5] sources
+
+[4272](https://github.com/ARMmbed/mbed-os/pull/4272): STM32 NUCLEO boards with Ethernet connector: Solve conflict with D11 arduino pin
+
+[4286](https://github.com/ARMmbed/mbed-os/pull/4286): Remove unsupported Coide exports
+
+[4293](https://github.com/ARMmbed/mbed-os/pull/4293): Remove duplicate optimization flags in IAR export
+
+[4296](https://github.com/ARMmbed/mbed-os/pull/4296): Update STM32 HAL f1 v1.5.0
+
+[4305](https://github.com/ARMmbed/mbed-os/pull/4305): Increase STM32 timeout for SPI transfers
+
+[4310](https://github.com/ARMmbed/mbed-os/pull/4310): Fix RAM vector table for NCS36510
+
+[4314](https://github.com/ARMmbed/mbed-os/pull/4314): Fix timeout units in events timing test
+
+[4263](https://github.com/ARMmbed/mbed-os/pull/4263): STM32F4xx: Consider all DMA ready/busy states in conditionals
+
+[4338](https://github.com/ARMmbed/mbed-os/pull/4338): u-blox ODIN driver v1.3 RC2 for mbed OS 5
+
+[4353](https://github.com/ARMmbed/mbed-os/pull/4353): Add static to nRF5 SDK11 macro definition
+
+[4366](https://github.com/ARMmbed/mbed-os/pull/4366): Move duplicated AnalogIn and PwmOut to nRF52 directory
+
+### Using the release
+
+You can fetch the mbed OS 5.4.6 release from the [`mbed-os` GitHub](https://github.com/ARMmbed/mbed-os) repository,
+using the tag "mbed-os-5.4.6". Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
+
 ## mbed OS 5.4.5 release
 We are pleased to announce the [mbed OS 5.4.5 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.5) is now available. This release includes exporter support for Visual Studio Code and Qt Creator Generic project, LWIP support for LPC4088, some tool updates, plus a number of bug fixes and enhancements to improve the quality of the codebase.
 
