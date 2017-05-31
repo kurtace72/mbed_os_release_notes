@@ -1,9 +1,7 @@
 # mbed OS 5.4 Releases
 
 ## mbed OS 5.4.6 release
-We are pleased to announce the [mbed OS 5.4.6 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.6) is now available. This release includes new target support for DISCO_L072CZ_LRWAN1 and RO359B. There is an update of the u-blox ODIN driver to v1.3 rc2
-and an update of the STM32 F1 STM32 cube (SDK) to v1.5.0. There are also a number of bug fixes and tool enhancements to improve the
-quality and stability of the codebase.
+We are pleased to announce the [mbed OS 5.4.6 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.6) is now available. This release includes new target support for DISCO_L072CZ_LRWAN1 and RO359B. There is an update of the u-blox ODIN driver to v1.3 rc2 and an update of the STM32 F1 STM32 cube (SDK) to v1.5.0. There are also a number of bug fixes and tool enhancements to improve the quality and stability of the codebase.
 
 ### Known Issues
 
@@ -65,8 +63,7 @@ Here is a full list of all changes and fixes in this release.
 
 ### Using the release
 
-You can fetch the mbed OS 5.4.6 release from the [`mbed-os` GitHub](https://github.com/ARMmbed/mbed-os) repository,
-using the tag "mbed-os-5.4.6". Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+You can fetch the mbed OS 5.4.6 release from the [`mbed-os` GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.6". Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
 
 ## mbed OS 5.4.5 release
