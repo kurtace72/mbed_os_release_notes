@@ -3,7 +3,7 @@
 ## mbed OS 5.4.7 release
 We are pleased to announce the [mbed OS 5.4.7 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.7) is now available. This release includes a flash API and IAR exporter for nRF52840 plus a number of bug fixes to improve the stability of the code base.
 
-### Known Issues
+### Known issues
 
 The following list of known issues apply to this release:
 
@@ -11,7 +11,7 @@ None
 
 Here is a full list of all changes and fixes in this release.
 
-### Fixes and Changes
+### Fixes and changes
 
 [4284](https://github.com/ARMmbed/mbed-os/pull/4284): Improve LWIP random library and TCP sequence number
 
@@ -41,10 +41,11 @@ Here is a full list of all changes and fixes in this release.
 
 You can fetch the mbed OS 5.4.7 release from the [`mbed-os` GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.7". Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
+
 ## mbed OS 5.4.6 release
 We are pleased to announce the [mbed OS 5.4.6 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.6) is now available. This release includes new target support for DISCO_L072CZ_LRWAN1 and RO359B. There is an update of the u-blox ODIN driver to v1.3 rc2 and an update of the STM32 F1 STM32 cube (SDK) to v1.5.0. There are also a number of bug fixes and tool enhancements to improve the quality and stability of the codebase.
 
-### Known Issues
+### Known issues
 
 The following list of known issues apply to this release:
 
@@ -52,13 +53,13 @@ None
 
 Here is a full list of all changes and fixes in this release.
 
-### Ports for Upcoming Targets
+### Ports for upcoming targets
 
 [4256](https://github.com/ARMmbed/mbed-os/pull/4256): DISCO_L072CZ_LRWAN1: Add a new platform
 
 [4302](https://github.com/ARMmbed/mbed-os/pull/4302): [RO359B] Add platform
 
-### Fixes and Changes
+### Fixes and changes
 
 [4270](https://github.com/ARMmbed/mbed-os/pull/4270): ODIN: Disable sleep because it's not compatible with Wi-Fi driver
 
