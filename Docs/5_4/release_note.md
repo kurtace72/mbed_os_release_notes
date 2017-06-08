@@ -1,5 +1,46 @@
 # mbed OS 5.4 Releases
 
+## mbed OS 5.4.7 release
+We are pleased to announce the [mbed OS 5.4.7 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.7) is now available. This release includes a flash API and IAR exporter for nRF52840 plus a number of bug fixes to improve the stability of the code base.
+
+### Known Issues
+
+The following list of known issues apply to this release:
+
+None
+
+Here is a full list of all changes and fixes in this release.
+
+### Fixes and Changes
+
+[4284](https://github.com/ARMmbed/mbed-os/pull/4284): Improve LWIP random library and TCP sequence number
+
+[4334](https://github.com/ARMmbed/mbed-os/pull/4334): Revert partially "Remove Cortex A support from CMSIS/RTOS"
+
+[4395](https://github.com/ARMmbed/mbed-os/pull/4395): Allow generic core exports to UVision
+
+[4282](https://github.com/ARMmbed/mbed-os/pull/4282): Flash API nRF52840
+
+[4383](https://github.com/ARMmbed/mbed-os/pull/4383): #4354 Fix MOTE_L152RC GPIO Write
+
+[4382](https://github.com/ARMmbed/mbed-os/pull/4382): Update `cmain.S` license
+
+[4332](https://github.com/ARMmbed/mbed-os/pull/4332): Fix for blockwise observation failure
+
+[4303](https://github.com/ARMmbed/mbed-os/pull/4303): Enable IAR exporter for nRF52840
+
+[4324](https://github.com/ARMmbed/mbed-os/pull/4324): STM32F3: Remove dependence on a specific flash vector table location
+
+[4393](https://github.com/ARMmbed/mbed-os/pull/4393): Race tests: Fix conditional check for `MBED_RTOS_SINGLE_THREAD` being defined
+
+[4368](https://github.com/ARMmbed/mbed-os/pull/4368): MTS_DRAGONFLY_F411RE/MTS_MDOT_F411RE: Add IAR to post_binary_hook toolchains
+
+[4455](https://github.com/ARMmbed/mbed-os/pull/4455): Make `mbed-coap` fixes
+
+### Using the release
+
+You can fetch the mbed OS 5.4.7 release from the [`mbed-os` GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.7". Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
 ## mbed OS 5.4.6 release
 We are pleased to announce the [mbed OS 5.4.6 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.6) is now available. This release includes new target support for DISCO_L072CZ_LRWAN1 and RO359B. There is an update of the u-blox ODIN driver to v1.3 rc2 and an update of the STM32 F1 STM32 cube (SDK) to v1.5.0. There are also a number of bug fixes and tool enhancements to improve the quality and stability of the codebase.
 
