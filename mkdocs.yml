@@ -4,6 +4,7 @@ docs_dir: Docs
 
 pages:
 - ['index.md','mbed OS Release Documents']
+- ['5_5/release_note.md', '5.5', 'mbed OS 5.5 release note']
 - ['5_4/release_note.md', '5.4', 'mbed OS 5.4 release note']
 - ['5_4/known_issues.md', '5.4', 'mbed OS 5.4 known issues']
 - ['5_3/release_note.md', '5.3', 'mbed OS 5.3 release note']
