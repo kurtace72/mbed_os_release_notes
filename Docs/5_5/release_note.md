@@ -20,7 +20,7 @@ The release also includes a standard in-application flash programming API, Flash
 
 mbed OS 5.5 introduces improved support for cellular connectivity modules, including standard integration through a built-in PPP network interface.
 
-A Linux-based Thread Access Point reference that uses the Thread border router [is now available](INSERT LINK).
+A Linux-based Thread Access Point reference that uses the Thread border router [is now available](https://github.com/ARMmbed/mbed-access-point).
 
 Our new native mbed OS BLE stack has reached our Early Partner Release milestone. This allows use of BLE transceivers with any mbed Enabled MCU and provides stack consistency across different BLE hardware. Based on this, we will be working with the first mbed Partners to enable support for their BLE transceivers and SoCs using this stack, planning to provide first access to developers in the 5.6 release. Partners interested in supporting BLE transceivers or SoCs with this stack should contact their Partner Enablement Team representatives.
 
@@ -30,7 +30,7 @@ mbed OS cryptography incorporates mbed TLS 2.5 and the completion of internal AP
 
 uVisor updates address several performance and usability issues reported since the last release. Secure boxes on devices with an ARMv7-M MPU now use less memory and provide more user-friendly configuration options.
 
-uVisor now also supports the new ARMv8-M architecture, including the TrustZone for ARMv8-M security extensions. Support for this architecture is still experimental and is currently only accessible through [a feature branch in mbed OS](INSERT LINK).
+uVisor now also supports the new ARMv8-M architecture, including the TrustZone for ARMv8-M security extensions. Support for this architecture is still experimental and is currently only accessible through [a feature branch in mbed OS](https://github.com/ARMmbed/mbed-os/tree-feature-uvisor-armv8m).
 
 ## Targets
 
@@ -40,7 +40,7 @@ We'll continue to add targets in our biweekly patch releases as partners work wi
 
 ## Fixes and changes
 
-Please see the [mbed OS GitHub repository](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.5) for a full list of changes introduced in this release. You can find a list of known issues [here](INSERT LINK).
+Please see the [mbed OS GitHub repository](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.5) for a full list of changes introduced in this release. You can find a list of known issues [here](https://docs.mbed.com/docs/mbed-os-release-notes/en/latest/5_5/known_issues/).
 
 ## Using the release 
 
