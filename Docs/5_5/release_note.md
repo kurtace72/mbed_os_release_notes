@@ -14,7 +14,7 @@ The release includes many general enhancements and fixes, and upstreams those th
 
 The file system infrastructure now supports SPI NOR Flash devices, a low-cost, external storage solution. Developers commonly use it in IoT devices to store firmware update images, device credentials and configuration information and to cache data for later syncing to the cloud. You can use the SPI NOR Flash storage with all mbed Enabled platforms, and it is the recommended storage medium for devices requiring firmware update capabilities.
 
-The release also includes a standard in-application flash programming API, FlashIAP, and first partner implementations. This component supports the upcoming mbed Cloud Update service, which manages device firmware update campaigns across fleets of devices.
+The release also includes a standard in-application flash programming API, [FlashIAP](https://github.com/ARMmbed/mbed-os/blob/master/drivers/FlashIAP.h), and first partner implementations. This component supports the upcoming mbed Cloud Update service, which manages device firmware update campaigns across fleets of devices.
 
 ## Connectivity 
 
