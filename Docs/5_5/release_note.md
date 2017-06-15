@@ -30,7 +30,7 @@ mbed OS cryptography incorporates mbed TLS 2.5 and the completion of internal AP
 
 uVisor updates address several performance and usability issues reported since the last release. Secure boxes on devices with an ARMv7-M MPU now use less memory and provide more user-friendly configuration options.
 
-uVisor now also supports the new ARMv8-M architecture, including the TrustZone for ARMv8-M security extensions. Support for this architecture is still experimental and is currently only accessible through [a feature branch in mbed OS](https://github.com/ARMmbed/mbed-os/tree-feature-uvisor-armv8m).
+uVisor now also supports the new ARMv8-M architecture, including the TrustZone for ARMv8-M security extensions. Support for this architecture is still experimental and is currently only accessible through [a feature branch in mbed OS](https://github.com/ARMmbed/mbed-os/tree/feature-uvisor-armv8m).
 
 ## Targets
 
