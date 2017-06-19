@@ -1,13 +1,13 @@
-# mbed OS 5.4 Releases
+## mbed OS 5.4 Releases
 
-## mbed OS 5.4.7 release
+### mbed OS 5.4.7 release
 We are pleased to announce the [mbed OS 5.4.7 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.7) is now available. This release includes a flash API and IAR exporter for nRF52840 plus a number of bug fixes to improve the stability of the code base.
 
-### Known issues
+#### Known issues
 
 There are no known issues for this release.
 
-### Fixes and changes
+#### Fixes and changes
 
 [4284](https://github.com/ARMmbed/mbed-os/pull/4284): Improve LWIP random library and TCP sequence number
 
@@ -33,25 +33,25 @@ There are no known issues for this release.
 
 [4455](https://github.com/ARMmbed/mbed-os/pull/4455): Make `mbed-coap` fixes
 
-### Using the release
+#### Using the release
 
 You can fetch the mbed OS 5.4.7 release from the [`mbed-os` GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.7". Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
-## mbed OS 5.4.6 release
+### mbed OS 5.4.6 release
 
 We are pleased to announce the [mbed OS 5.4.6 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.6) is now available. This release includes new target support for DISCO_L072CZ_LRWAN1 and RO359B. There is an update of the u-blox ODIN driver to v1.3 rc2 and an update of the STM32 F1 STM32 cube (SDK) to v1.5.0. There are also a number of bug fixes and tool enhancements to improve the quality and stability of the codebase.
 
-### Known issues
+#### Known issues
 
 There are no known issues for this release.
 
-### Ports for upcoming targets
+#### Ports for upcoming targets
 
 [4256](https://github.com/ARMmbed/mbed-os/pull/4256): DISCO_L072CZ_LRWAN1: Add a new platform
 
 [4302](https://github.com/ARMmbed/mbed-os/pull/4302): [RO359B] Add platform
 
-### Fixes and changes
+#### Fixes and changes
 
 [4270](https://github.com/ARMmbed/mbed-os/pull/4270): ODIN: Disable sleep because it's not compatible with Wi-Fi driver
 
@@ -95,16 +95,16 @@ There are no known issues for this release.
 
 [4366](https://github.com/ARMmbed/mbed-os/pull/4366): Move duplicated AnalogIn and PwmOut to nRF52 directory
 
-### Using the release
+#### Using the release
 
 You can fetch the mbed OS 5.4.6 release from the [`mbed-os` GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.6". Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
 
-## mbed OS 5.4.5 release
+### mbed OS 5.4.5 release
 
 We are pleased to announce the [mbed OS 5.4.5 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.5) is now available. This release includes exporter support for Visual Studio Code and Qt Creator Generic project, LWIP support for LPC4088, some tool updates, plus a number of bug fixes and enhancements to improve the quality of the codebase.
 
-### Fixes and changes
+#### Fixes and changes
 
 [4059](https://github.com/ARMmbed/mbed-os/pull/4059): [Silicon Labs] Rename targets
 
@@ -142,18 +142,18 @@ We are pleased to announce the [mbed OS 5.4.5 release](https://github.com/ARMmbe
 
 [4254](https://github.com/ARMmbed/mbed-os/pull/4254): Remove unused variable in `TARGET_NXP/lpc17_emac.c`
 
-### Using the release
+#### Using the release
 
 You can fetch the mbed OS 5.4.5 release from the [`mbed-os` GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.5".
 
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
 
-## mbed OS 5.4.4 release
+### mbed OS 5.4.4 release
 
 We are pleased to announce the [mbed OS 5.4.4 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.4) is now available. This release includes a reworking of the internal ADC channels code for numerous STM boards, a new callback API for CAN, support for the bootloader and FlashIAP for NUC472/M453, plus numerous core software and tools bug fixes to improve and further stabilize the codebase.
 
-### Fixes and changes
+#### Fixes and changes
 
 [4008](https://github.com/ARMmbed/mbed-os/pull/4008): [NUC472/M453] Support bootloader and FlashIAP
 
@@ -221,23 +221,23 @@ We are pleased to announce the [mbed OS 5.4.4 release](https://github.com/ARMmbe
 
 [4153](https://github.com/ARMmbed/mbed-os/pull/4153): [STM32F2] Rework internal ADC channels
 
-### Using the release
+#### Using the release
 
 You can fetch the mbed OS 5.4.4 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.4".
 
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/) or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
-## mbed OS 5.4.3 release
+### mbed OS 5.4.3 release
 
 We are pleased to announce the [mbed OS 5.4.3 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.3) is now available. This release includes new target support for nRf52840 and UBLOX_C030. There are also a number of bug fixes to improve the stability of  the code and improvements to the tools.
 
-### Ports for upcoming targets
+#### Ports for upcoming targets
 
 [3841](https://github.com/ARMmbed/mbed-os/pull/3841): Add nRf52840 target
 
 [3992](https://github.com/ARMmbed/mbed-os/pull/3992): Introducing UBLOX_C030 platform
 
-### Fixes and changes
+#### Fixes and changes
 
 [3951](https://github.com/ARMmbed/mbed-os/pull/3951): [NUCLEO_F303ZE] Correct ARDUINO pin
 
@@ -285,23 +285,23 @@ We are pleased to announce the [mbed OS 5.4.3 release](https://github.com/ARMmbe
 
 [4098](https://github.com/ARMmbed/mbed-os/pull/4098): Raise error when mbed_app.json is bad
 
-### Using the release
+#### Using the release
 
 You can fetch the mbed OS 5.4.3 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.3".
 
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
-## mbed OS 5.4.2 release
+### mbed OS 5.4.2 release
 
 We are pleased to announce the [mbed OS 5.4.2 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.2) is now available.
 
 This release includes support for the new target EFM32PG12, some driver updates for NUC472/M453, an update for STM32 to Cube version v1.6.0 and TLS hw acceleration (AES ECB) for NUCLEO_F439ZI. There are also bug fixes and improvements to the tools and mbed-os core.
 
-### Ports for upcoming targets
+#### Ports for upcoming targets
 
 [3934](https://github.com/ARMmbed/mbed-os/pull/3934): [Silicon Labs] Update to HAL and devices
 
-### Fixes and changes
+#### Fixes and changes
 
 [3691](https://github.com/ARMmbed/mbed-os/pull/3691): [TLS/hw acceleration] AES ECB for NUCLEO_F439ZI
 
@@ -347,20 +347,19 @@ This release includes support for the new target EFM32PG12, some driver updates 
 
 [3939](https://github.com/ARMmbed/mbed-os/pull/3939): Update mbed trace
 
-### Using the release
+#### Using the release
 
 You can fetch the mbed OS 5.4.2 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.2".
 
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
-
-## mbed OS 5.4.1 release
+### mbed OS 5.4.1 release
 
 We are pleased to announce the [mbed OS 5.4.1 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.1) is now available.
 
 This release includes an update of mbed TLS to version 2.4.2, bringing essential and critical security patches, including a fix for CVE-2017-2784. For core mbed OS, there are a number of bug fixes to improve the stability of the code and improvements to the tools.
 
-### Fixes and changes
+#### Fixes and changes
 
 [3716](https://github.com/ARMmbed/mbed-os/pull/3716): fix for issue #3715: correction in startup files for ARM and IAR, alignment of system_stm32f429xx.c files
 
@@ -416,26 +415,25 @@ This release includes an update of mbed TLS to version 2.4.2, bringing essential
 
 [3829](https://github.com/ARMmbed/mbed-os/pull/3829): can_write(): return error code when no tx mailboxes are available
 
-### Using the release
+#### Using the release
 
 You can fetch the mbed OS 5.4.1 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.4.1".
 
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
-
-## mbed OS 5.4.0 release
+### mbed OS 5.4.0 release
 
 This is the release note for ARM mbed OS 5.4.0. It summarizes the major enhancements in this version.
 
 You can find the mbed OS 5.4.0 release on [GitHub](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.4).
 
-## About this release
+### About this release
 
 mbed OS 5.4.0 incorporates functionality you can use to prepare for the upcoming mbed Cloud device management services. This includes bootloader and filesystem infrastructure and the certified Thread 1.1 stack for developers. In addition, this release contains many minor fixes and enhancements and brings target platform support up to 74 targets.
 
 The following sections provide more details about this release.
 
-## Core
+### Core
 
 mbed OS 5.4 adds flexible filesystem support to address the needs of IoT applications requiring storage within the end node. This release already includes a FAT filesystem implementation for removable media, such as SD cards, and future releases will add embedded flash filesystems and encryption.
 
@@ -445,7 +443,7 @@ The release also includes early access to the mbed OS bootloader, so partners ca
 
 To read the documentation, see [file system](https://docs.mbed.com/docs/mbed-os-api-reference/en/latest/APIs/storage/filesystem/) and [bootloader](https://docs.mbed.com/docs/mbed-os-handbook/en/latest/advanced/bootloader/).
 
-## Connectivity
+### Connectivity
 
 mbed OS 5.4 uses the recently certified mbed Thread 1.1 stack to provide solutions for building end nodes and border routers.
 
@@ -453,11 +451,11 @@ A Linux-based Access Point reference that uses the Thread border router is also 
 
 The mbed OS [LoRaWAN APIs](https://github.com/ARMmbed/mbed-os/tree/feature-lorawan/features/FEATURE_LORAWAN) are available for partner feedback and integration.
 
-## Security
+### Security
 
 The mbed crypto libraries in mbed TLS include all the internal partner APIs and documentation for enabling hardware entropy and symmetric and asymmetric cryptographic acceleration. Partners are working on implementations for their target platforms, and a partner workshop will support them. We expect support for the first set of targets in 5.5.
 
-## Upcoming
+### Upcoming
 
 The feature branch work on our [CMSIS5 and CMSIS-RTOS2](https://github.com/ARMmbed/mbed-os/tree/feature_cmsis5/rtos) upgrade is nearing completion, so testing will begin soon after the release of 5.4. We are aiming for inclusion on mainline for 5.5.
 
@@ -465,17 +463,17 @@ Throughout the year, we also plan a program of upgrading supported compilers to 
 
 If you would like to be involved in helping test any of these upgrades to help minimize the effect on developers, please contact us.
 
-## Targets
+### Targets
 
 Thanks to our partners’ hard work, mbed OS 5.4 now supports 74 [target platforms](https://developer.mbed.org/platforms/).
 
 We will continue to add new targets in our biweekly releases as partners introduce support.
 
-## Fixes and changes
+### Fixes and changes
 
 Please see the `mbed-os` GitHub repository referenced below for a full list of changes introduced in this release. You can find a list of known issues [here](https://github.com/ARMmbed/mbed_os_release_notes/blob/master/Docs/5_4/known_issues.md).
 
-## Using the release
+### Using the release
 
 You can fetch the mbed OS 5.4.0 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository using the tag “mbed-os-5.4.0”.
 

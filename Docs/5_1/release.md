@@ -1,11 +1,11 @@
-# mbed OS 5.1 releases
+## mbed OS 5.1 releases
 
-## mbed OS 5.1.5 release
+### mbed OS 5.1.5 release
 We are pleased to announce the [mbed OS 5.1.5 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.1.5) is now available.
 
 This release includes extended IAR support, uVisor on Beetle and fixes to the exporting process.
 
-### Ports for Upcoming Targets
+#### Ports for Upcoming Targets
 
 [2669](https://github.com/ARMmbed/mbed-os/pull/2669): Added u-blox C029 target
 
@@ -16,7 +16,7 @@ This release includes extended IAR support, uVisor on Beetle and fixes to the ex
 [2827](https://github.com/ARMmbed/mbed-os/pull/2827): include MultiTech xDot in mbed 5 releases
 
 
-### Fixes and Changes
+#### Fixes and Changes
 
 [2648](https://github.com/ARMmbed/mbed-os/pull/2648): Disable RTOS tests for STM32 8K targets
 
@@ -149,19 +149,19 @@ This release includes extended IAR support, uVisor on Beetle and fixes to the ex
 [2800](https://github.com/ARMmbed/mbed-os/pull/2800): Removed --no_static_destruction from IAR IDE flags
 
 
-### Using the release
+#### Using the release
 
 You can fetch the mbed OS 5.1.5 release from the [mbed-os GitHUb](https://github.com/ARMmbed/mbed-os) repository,
 using the tag "mbed-os-5.1.5".
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
-## mbed OS 5.1.4 release
+### mbed OS 5.1.4 release
 
 We are pleased to announce the [mbed OS 5.1.4 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.1.4) is now available.
 
 This release includes many minor enhancements and fixes, adds some target HAL ports in preparation for upcoming new targets (ST Disco F769NI, Delta DFBM NQ620, MTM mtconnect 04S, ST Nucleo f303ze), and some early additions for runtime heap memory tracking features we're working on that we'll share more on soon.
 
-### Changes and fixes
+#### Changes and fixes
 
 [2442](https://github.com/ARMmbed/mbed-os/pull/2442): Malloc heap info
 
@@ -255,17 +255,17 @@ This release includes many minor enhancements and fixes, adds some target HAL po
 
 [2678](https://github.com/ARMmbed/mbed-os/pull/2678): Fixing NCS36510 compile on Linux
 
-### Using the release
+#### Using the release
 
 You can fetch the mbed OS 5.1.4 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.1.4".
 
 Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
 
-## mbed OS 5.1.3 release
+### mbed OS 5.1.3 release
 
 The [mbed OS 5.1.3 release is now on GitHub](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.1.3).
 
-### New targets
+#### New targets
 
 * KL27Z_IAR
 * MAX32620HSP_ARM_STD
@@ -275,7 +275,7 @@ The [mbed OS 5.1.3 release is now on GitHub](https://github.com/ARMmbed/mbed-os/
 * NCS36510_GCC_ARM
 * NCS36510_IAR
 
-### Changes in the version
+#### Changes in the version
 
 * Added support for NSAPI_REUSEADDR to the lwip interface.
 * STM32F3 family : Add and enable asynchronous serial, plus tests.
@@ -310,7 +310,7 @@ The [mbed OS 5.1.3 release is now on GitHub](https://github.com/ARMmbed/mbed-os/
 * Adopted netconn_gethostbyname in the lwip interface.
 * Restructured nsapi_dns.h to have clear separation between C/C++ .
 
-### Tool fixes
+#### Tool fixes
 
 * Tests: New ones added and some updates to existing.
 * RTOS:
@@ -319,7 +319,7 @@ The [mbed OS 5.1.3 release is now on GitHub](https://github.com/ARMmbed/mbed-os/
     * Add MAX32620 target support.
     * Fix implicit declaration of function 'atexit'.
 
-## mbed OS 5.1.2 release
+### mbed OS 5.1.2 release
 
 The [mbed OS 5.1.2 release is now on GitHub](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.1.2).
 
@@ -333,24 +333,24 @@ The [mbed OS 5.1.2 release is now on GitHub](https://github.com/ARMmbed/mbed-os/
    * pwm and analog definition clean-up.
 * Nordic - NRF51 - fix for overflow in the ticket.
 
-## mbed OS 5.1.1 release
+### mbed OS 5.1.1 release
 
 The [mbed OS 5.1.1 release is now on GitHub](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.1.1).
 
 * RTOS - fix joining a terminated thread.
 * K64F name fix for cmsis and hal.
 
-## mbed OS 5.1 - 5th August 2016
+### mbed OS 5.1 - 5th August 2016
 
 This is the release note for the mbed OS 5.1.0 release. It summarises the major changes in this version of mbed OS, as well as the requirements for partners looking to support this release on development platforms.
 
 The [mbed OS 5.1.0 release is on GitHub](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.1.0).
 
-### About this release
+#### About this release
 
 This release marks significant changes and enhancements that have accelerated features of our roadmap, opened up the applicability of mbed OS to many more IoT use cases, and unlocked compatibility with our mbed OS 2 "Classic" ecosystem.
 
-### Version summary
+#### Version summary
 
 The headline changes in this release are:
 
@@ -366,9 +366,9 @@ Based on these changes and the hard work of our partners, mbed OS target support
 
 The following sections provide more details of these and other changes in this release.
 
-### Core
+#### Core
 
-#### RTOS
+##### RTOS
 
 mbed OS now incorporates an RTOS.
 
@@ -378,7 +378,7 @@ The implementation is based on CMSIS-RTOS RTX 4.79.0, and we will be tracking an
 
 The MINAR eventing-only scheduler is not included in this release. An alpha version of a more flexible [event scheduler library](https://github.com/ARMmbed/mbed-events) is available, supporting the same design patterns within RTOS threads and components. This library will be merged and managed as part of the core OS codebase once it reaches release maturity.
 
-#### Drivers and support libraries
+##### Drivers and support libraries
 
 There is now driver support for a wide range of standard MCU peripherals across the extended target platforms:
 
@@ -398,13 +398,13 @@ These drivers have been internally upgraded to integrate thread safety logic, wh
 
 A new ``Callback`` class supersedes ``FunctionPointer`` (still supported) to provide a more flexible and neater syntax for capturing and calling static function and class member callbacks. It now uses the same class regardless of the number of arguments on the callback.
 
-#### C libraries
+##### C libraries
 
 The C libraries provided with each of the supported toolchains have been integrated into mbed OS, including implementation of thread safety support.
 
-### Security
+#### Security
 
-#### uVisor
+##### uVisor
 
 uVisor has been upgraded to support the RTOS.
 
@@ -412,7 +412,7 @@ We have made the modifications CMSIS required to allow uVisor to hook interrupts
 
 uVisor now includes a disabled mode for ARMv7-M and ARMv6-M architectures that maintains code compatibility even when uVisor is not present or active, enabling a smooth software upgrade path as platforms introduce support for uVisor.
 
-#### Crypto
+##### Crypto
 
 The crypto libraries now support:
 
@@ -420,7 +420,7 @@ The crypto libraries now support:
 * A HAL API for providing strong entropy sources based on a hardware TRNG.
 * A reasonable strength entropy source based on non-volatile storage.
 
-#### mbed TLS
+##### mbed TLS
 
 We have integrated version 2.3.0 of mbed TLS, providing TLS and DTLS support for services.
 
@@ -428,7 +428,7 @@ See [the mbed TLS 2.3.0 release note](https://tls.mbed.org/tech-updates/releases
 
 Please note, applications using mbed TLS on boards that have not yet implemented hardware entropy support must use the NULL ENTROPY configuration to build. However, please be aware that no security will be offered by mbed TLS in those cases.
 
-### Connectivity
+#### Connectivity
 
 The sockets API has been revised to support:
 
@@ -444,29 +444,29 @@ We have released a 6LoWPAN Border Router reference application and an associated
 
 We've extended our Bluetooth Low Energy (BLE) API to support user-defined scheduling policies. This maintains compatibility with mbed OS 2 BLE applications, while allowing developers to take advantage of the RTOS to design more efficient solutions. The Bluetooth API is now supported across multiple vendor silicon, covering both SoC and MCU plus Transceiver chipset arrangements.
 
-### Services
+#### Services
 
 mbed OS integrates the latest mbed Cloud Client, providing connectivity and management services from mbed Device Connector.
 
 See [the mbed Device Connector site](https://connector.mbed.com/).
 
-### Tools and workflow
+#### Tools and workflow
 
 We've reworked the tools and workflows to address feedback from previous releases on the use of yotta and the desire for backward compatibility with mbed OS 2 (“Classic”). In this release we build the OS, components and applications using modified versions of the mbed OS 2 build scripts.
 
-#### mbed CLI
+##### mbed CLI
 
 You can use a new top level command line interface (mbed CLI) to drive the build, package management and test scripts. It is also a natural integration point for IDEs.
 
 See [the mbed CLI repository](https://github.com/ARMmbed/mbed-cli).
 
-#### Dependencies
+##### Dependencies
 
 This release does not use yotta; applications depend instead on a single mbed OS repository where all dependencies are pinned, making applications reproducible and simplifying development and management.
 
 See [the mbed OS repository](https://github.com/ARMmbed/mbed-os).
 
-#### Code compatibility and toolchain support
+##### Code compatibility and toolchain support
 
 Code is compatible with c99/C++03, and doesn't use any C++11 or C++14 features.
 
@@ -474,11 +474,11 @@ We now support building and testing across multiple toolchains (ARM Compiler 5, 
 
 The build tools now emit static RAM and FLASH sizes and a top level breakdown on every build.
 
-#### Exporting to Third Party IDEs
+##### Exporting to Third Party IDEs
 
 We support generation of project files to enable opening mbed OS projects in Keil MDK, IAR Workbench and other environments. This is useful for development and launching debug sessions, and can be achieved from mbed CLI or the mbed Online Compiler.
 
-### mbed Enabled
+#### mbed Enabled
 
 We've formalised the mbed Enabled program, providing versioned compliance criteria and technical requirements for boards, on-board interfaces and end products.
 
@@ -487,7 +487,7 @@ The following resources are available:
 * The mbed Enabled [requirements documents](https://www.mbed.com/mbed-enabled-requirements/), available on the site.
 * The mbed Enabled [application form](https://docs.google.com/forms/d/e/1FAIpQLSf87Qw7FsDelw9L4q_sB8QW3Hy5aff5WRwZUhPlNzf2Xm6iVw/viewform).
 
-### Targets
+#### Targets
 
 Thanks to our partners' hard work, including an onsite workshop, the mbed OS 5.1 release already supports the following targets:
 
@@ -534,6 +534,6 @@ Thanks to our partners' hard work, including an onsite workshop, the mbed OS 5.1
 
 We will add new targets in our bi-weekly releases as partners introduce support. If you are a partner, please see details in the [Partner Portal](https://partners.mbed.com/en/partner-login/).  
 
-### Getting Started
+#### Getting Started
 
 To get started with this release, see the [Handbook](https://docs.mbed.com/docs/mbed-os-handbook/).
