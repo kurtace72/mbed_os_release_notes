@@ -1,1 +1,0 @@
-# Known issues in mbed OS 5.1.0

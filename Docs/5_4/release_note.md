@@ -1,5 +1,6 @@
 ## mbed OS 5.4 Releases
 
+
 ### mbed OS 5.4.7 release
 We are pleased to announce the [mbed OS 5.4.7 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.4.7) is now available. This release includes a flash API and IAR exporter for nRF52840 plus a number of bug fixes to improve the stability of the code base.
 
