@@ -22,13 +22,13 @@ For further information regarding this release, please refer to the release note
 
 * **Description**: "Once a maximum fragment length other than 2^14 has been successfully negotiated, the client and server MUST immediately begin fragmenting messages (including handshake messages) to ensure that no fragment larger than the negotiated length is sent." In mbed TLS, only the application data is fragmented, and the handshake messages are not.
 * **Workaround**: Disable `MaxFragmentLength` Extension Negotiation.
-* **Reported Issue**: https://github.com/ARMmbed/mbedtls/issues/387
+* **Reported Issue**: [https://github.com/ARMmbed/mbedtls/issues/387](https://github.com/ARMmbed/mbedtls/issues/387)
 * **Priority**: Major
 
 ## IP addresses in the X.509 certificate `subjectAltNames`
 
 * **Description**: Parsing IP addresses in the X.509 certificate `subjectAltNames` is not supported yet. Certificate chains relying on IP addresses in `subjectAltNames` return a `BADCERT_CN_MISMATCH` error.
-* **Workaround**: Merge branch https://github.com/ARMmbed/mbedtls/tree/iotssl-602-san-ip into your copy of mbed TLS before building the application. It is still in EXPERIMENTAL stage; use it on your own responsibility!
+* **Workaround**: Merge branch [https://github.com/ARMmbed/mbedtls/tree/iotssl-602-san-ip](https://github.com/ARMmbed/mbedtls/tree/iotssl-602-san-ip) into your copy of mbed TLS before building the application. It is still in EXPERIMENTAL stage; use it on your own responsibility!
 * **Reported Issue**: Issue reported by a customer in email.
 * **Priority**: Major
 
@@ -44,46 +44,54 @@ For further information regarding this release, please refer to the release note
 * **Description**:
 The stack memory usage of some mbed TLS features is higher than 4 KB, which may cause stack overflow errors when running in constrained embedded environments with mbed OS, which are particularly limited in RAM.
 * **Workaround**: The amount of stack required is dependent on the application and what features of the library it chooses to use. More intensive, demanding tasks may not be possible on more limited, constrained devices, so we recommend designing for the limitations of the target device or choosing a device suitable for your application.
-* **Reported Issue**: https://github.com/ARMmbed/mbed-os-example-tls/issues/14
+* **Reported Issue**: [https://github.com/ARMmbed/mbed-os-example-tls/issues/14](https://github.com/ARMmbed/mbed-os-example-tls/issues/14)
 * **Priority**: Major
 
 ## Commissioner does not retransmit message when it receives retransmission
 
 * **Description**: There are two issues with DTLS handshake retransmission. First, the joiner fails to correctly parse received records because it does not correctly handle queued retransmissions received. Second, the commissioner may cause a deadlock because it does not retransmit certain records after it receives retransmission as instructed in RFC6347 Section 4.2.4.
 * **Workaround**: There is no known workaround.
-* **Reported Issue**: https://github.com/openthread/openthread/pull/1207
+* **Reported Issue**: [https://github.com/openthread/openthread/pull/1207](https://github.com/openthread/openthread/pull/1207)
 * **Priority**: Major
 
 ## uVisor does not support nested interrupts
 
 * **Description**: When running an application with uVisor enabled, nested interrupts are not supported.
 * **Workaround**: There is no available workaround at the moment.
-* **Reported Issue**: https://github.com/ARMmbed/uvisor/issues/345
+* **Reported Issue**: [https://github.com/ARMmbed/uvisor/issues/345](https://github.com/ARMmbed/uvisor/issues/345)
 * **Priority**: Major
 
 ## On ARMv7-M targets supporting uVisor, the RTOS runs with the same privilege as uVisor
 
 * **Description**: The current architecture of uVisor and of RTX require the RTOS to run with the same privilege as uVisor. As such, the RTOS is considered trusted.
 * **Workaround**: There is no available workaround at the moment.
-* **Reported Issue**: https://github.com/ARMmbed/uvisor/issues/235
+* **Reported Issue**: [https://github.com/ARMmbed/uvisor/issues/235](https://github.com/ARMmbed/uvisor/issues/235)
 * **Priority**: Major
 
 ## `mbed-os-example-client` linking fails in ARMCC for Realtek board
 
 * **Description**: `mbed-os-example-client` takes more flash space than reserved for Realtek board. For it to link properly, more code has to move to SDRAM, which is not yet implemented or tested.
 * **Workaround**: There is no available workaround at the moment.
-* **Reported Issue**: https://github.com/ARMmbed/mbed-os/issues/4462
+* **Reported Issue**: [https://github.com/ARMmbed/mbed-os/issues/4462](https://github.com/ARMmbed/mbed-os/issues/4462)
 * **Priority**: Major
 
 ## Mesh networking applications fails to compile with IAR on unsecure platform
 
 * **Description**: If the target has not defined a source of hardware entropy, then mbed TLS support is disabled. This leads to compilation warnings on some Nanostack related modules and compilation failure when using IAR toolchain.
 * **Workaround**: There is no available workaround at the moment.
-* **Reported Issue**: https://github.com/ARMmbed/mbed-os-example-mesh-minimal/issues/91
+* **Reported Issue**: [https://github.com/ARMmbed/mbed-os-example-mesh-minimal/issues/91](https://github.com/ARMmbed/mbed-os-example-mesh-minimal/issues/91)
 * **Priority**: Major
 
 ## UARTSerial asserts if debug is enabled
 
 * **Description**: UARTSerial attempts to claim a mutex from interrupt context. If debug is not enabled, this fails silently, and the driver works as intended. If debug is enabled, the system stops in the assert.
 * **Workaround**: Turn off the debug build.
-* **Reported Issue**: https://github.com/ARMmbed/mbed-os/issues/4537  
+* **Reported Issue**: [https://github.com/ARMmbed/mbed-os/issues/4537](https://github.com/ARMmbed/mbed-os/issues/4537)  
+
+## Introduction of RTX/CMSIS 5 has broken semaphore signalling
+ 
+* **Description**: RTX 5 reduced the semaphore count limit from UINT16_MAX to the arbitrary value 1024 and added an assert that would halt if the semaphore count exceeded this limit. This is especially problematic for applications that are using the semaphore for signaling. In RTX 4, the semaphore was the only library-friendly mechanism available for signaling, and in RTX 5 it is still the only option for the C++ layer. This breaks a number of the higher-level APIs.
+* **Workaround**: None
+* **Reported Issue**: [https://github.com/ARMmbed/mbed-os/issues/4584](https://github.com/ARMmbed/mbed-os/issues/4584)
+* **Priority**: Critical
+ 
