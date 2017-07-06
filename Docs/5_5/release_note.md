@@ -1,5 +1,109 @@
 # mbed OS 5.5 Releases
 
+## mbed OS 5.5.2 release
+We are pleased to announce the [mbed OS 5.5.2 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.5.2) is now available.
+
+This release includes new target support for DISCO_F413ZH and VBLUno51 and an update for the STM32F7 cube from v1.6.0 to v1.7.0. It also includes SHA256 and SHA1 hardware acceleration support for NUCLEO_F439ZI, USB Device for DISCO_L072CZ_LRWAN1, plus fixes to mbed OS and tools to improve stability and functionality. 
+
+### Known issues
+
+The following list of known issues apply to this release:
+
+Due to a dependency of stm32f413 on a later patch version of IAR, which is currently not available in our CI systems, IAR export support for this platform is not available for this release. 
+
+[4697](https://github.com/ARMmbed/mbed-os/pull/4697): IAR: Remove stm32f413 from definitions
+
+Here is a full list of all changes and fixes in this release.
+
+### Ports for upcoming targets
+
+[4410](https://github.com/ARMmbed/mbed-os/pull/4410): DISCO_F413ZH: Add new platform
+
+[4629](https://github.com/ARMmbed/mbed-os/pull/4629): Add support for VBLUno51 board
+
+### Fixes and changes
+
+[4578](https://github.com/ARMmbed/mbed-os/pull/4578): Turn off "browse information" in Uvision template
+
+[4616](https://github.com/ARMmbed/mbed-os/pull/4616): Fix unresolved include of `mbed_config.h` in Eclipse
+
+[4375](https://github.com/ARMmbed/mbed-os/pull/4375): Stm32 SPI: Use LL API to improve performances
+
+[4401](https://github.com/ARMmbed/mbed-os/pull/4401): STM32: Add USB used pins in `PinNames.h` files
+
+[4520](https://github.com/ARMmbed/mbed-os/pull/4520): Update link in `CONTRIBUTING.md`
+
+[4103](https://github.com/ARMmbed/mbed-os/pull/4103): Add `extra_targets.json` support to build tools
+
+[4390](https://github.com/ARMmbed/mbed-os/pull/4390): Nucleo-F070RB doesn't work when use internal clock
+
+[4405](https://github.com/ARMmbed/mbed-os/pull/4405): DISCO_L072CZ_LRWAN1: PC_13 definition missing in `PinNames.h` fix
+
+[4426](https://github.com/ARMmbed/mbed-os/pull/4426): Improve directory scanning performance
+
+[4538](https://github.com/ARMmbed/mbed-os/pull/4538): Avoid lock collision between SerialBase & UARTSerial
+
+[4552](https://github.com/ARMmbed/mbed-os/pull/4552): NUCLEO_F767ZI: Add missing IAR definitions
+
+[4557](https://github.com/ARMmbed/mbed-os/pull/4557): Enable I2C and AnalogIn drivers for CM3DS_MPS2 target
+
+[4572](https://github.com/ARMmbed/mbed-os/pull/4572): DISCO_L072CZ_LRWAN1: Add support of USB device
+
+[4157](https://github.com/ARMmbed/mbed-os/pull/4157): NUCLEO_F439ZI/mbedtls: Add SHA1 `hw_acceleration`
+
+[4422](https://github.com/ARMmbed/mbed-os/pull/4422): STM32F4 set HSE timeout value to 100 ms
+
+[4594](https://github.com/ARMmbed/mbed-os/pull/4594): Introduce `mbed::NonCopyable` traits
+
+[4598](https://github.com/ARMmbed/mbed-os/pull/4598): Fix style issues in IAR exporter
+
+[4604](https://github.com/ARMmbed/mbed-os/pull/4604): cmain IAR: Add mbed main
+
+[4607](https://github.com/ARMmbed/mbed-os/pull/4607): Fix missing init in MBRBlockDevice
+
+[4603](https://github.com/ARMmbed/mbed-os/pull/4603): STM32: `mbed_overrides.c` is common for all families
+
+[4638](https://github.com/ARMmbed/mbed-os/pull/4638): DISCO_L475VG_IOT01A: Fix startup files for cmsis5
+
+[4610](https://github.com/ARMmbed/mbed-os/pull/4610): STM32: `targets.json` file simplification
+
+[4647](https://github.com/ARMmbed/mbed-os/pull/4647): Remove hardcode UART pins definitions for nRF52832 SoC
+
+[4646](https://github.com/ARMmbed/mbed-os/pull/4646): RTX: Fixed RTXv5 mutex owner list handling
+
+[4625](https://github.com/ARMmbed/mbed-os/pull/4625): Update STM32F7 cube from v1.6.0 to v1.7.0
+
+[4421](https://github.com/ARMmbed/mbed-os/pull/4421): STM32: Clock source selection in .json config file
+
+[4559](https://github.com/ARMmbed/mbed-os/pull/4559): fatfs: Remove unused `fat_filesystem_set_errno` function
+
+[4571](https://github.com/ARMmbed/mbed-os/pull/4571): Events: Adopt osEventFlags from RTX 5
+
+[4577](https://github.com/ARMmbed/mbed-os/pull/4577): XDOT_L151CC: Enable HSI after waking from stop mode so ADC functions
+
+[4601](https://github.com/ARMmbed/mbed-os/pull/4601): RTOS: Fix MemoryPool and Queue destructor
+
+[4632](https://github.com/ARMmbed/mbed-os/pull/4632): STM32: Fix us ticker set event timestamp double ISR possibility
+
+[4641](https://github.com/ARMmbed/mbed-os/pull/4641): Increase L0 ADC sample time
+
+[4656](https://github.com/ARMmbed/mbed-os/pull/4656): Correct comments in Flash API for STM32 L0 targets
+
+[4671](https://github.com/ARMmbed/mbed-os/pull/4671): Retarget: Fix `microlib` for mbed OS 2
+
+[4529](https://github.com/ARMmbed/mbed-os/pull/4529): Manage multiple instances of AnalogOut
+
+[4565](https://github.com/ARMmbed/mbed-os/pull/4565): Add `FlashIAP` support for REALTEK_RTL8195AM
+
+[4159](https://github.com/ARMmbed/mbed-os/pull/4159): NUCLEO_F439ZI/mbedtls: Add SHA256 hw_acceleration
+
+### Using the release
+
+You can fetch the mbed OS 5.5.2 release from the [mbed-os GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.5.2".
+
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
+
 ## mbed OS 5.5.1 release
 
 We are pleased to announce the [mbed OS 5.5.1 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.5.1) is now available. This release includes a fix for a critical issue found in mbed-os-5.5.0:  [4584](https://github.com/ARMmbed/mbed-os/issues/4584) Introduction of RTX/CMSIS 5 has broken semaphore signaling. We have fixed the issue by reverting behavior to how it was in RTX/CMSIS 4.
