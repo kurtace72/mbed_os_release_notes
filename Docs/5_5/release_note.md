@@ -1,6 +1,89 @@
 # mbed OS 5.5 Releases
 
+## mbed OS 5.5.3 release
+
+We are pleased to announce the [mbed OS 5.5.3 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.5.3) is now available. This release includes bug fixes that improve the stability of the tools and codebase.
+
+### Fixes and changes
+
+[4446](https://github.com/ARMmbed/mbed-os/pull/4446) Create customer port verification tests for cellular
+
+[4531](https://github.com/ARMmbed/mbed-os/pull/4531) Update branching option to branch from another branch
+
+[4672](https://github.com/ARMmbed/mbed-os/pull/4672) Cellular: Create not-supported error if `MODEM_ON_BOARD` not defined
+
+[4468](https://github.com/ARMmbed/mbed-os/pull/4468) Put quotes around include files
+
+[4685](https://github.com/ARMmbed/mbed-os/pull/4685) Rename `runnig_thread` to `running_thread` in `rtx_mutex`
+
+[4163](https://github.com/ARMmbed/mbed-os/pull/4163) STM32L486RG/mbedtls: Add aes hardware acceleration
+
+[4659](https://github.com/ARMmbed/mbed-os/pull/4659) Add the correct startup .s file in `TARGET_STM32F767`
+
+[4215](https://github.com/ARMmbed/mbed-os/pull/4215) Add script to lint `targets.json`
+
+[4711](https://github.com/ARMmbed/mbed-os/pull/4711) Add missing verbose=verbose to print the command-line correctly at `build_api.py`
+
+[4710](https://github.com/ARMmbed/mbed-os/pull/4710) Correct a typo in the GitHub issue template
+
+[4636](https://github.com/ARMmbed/mbed-os/pull/4636) Double escape defines in `gnuarmeclipse` export
+
+[4635](https://github.com/ARMmbed/mbed-os/pull/4635) Add `_acquire()` function, and remove duplication in format/freq calls
+
+[4548](https://github.com/ARMmbed/mbed-os/pull/4548) Resolve warnings for `mbed-os-examples`
+
+[4547](https://github.com/ARMmbed/mbed-os/pull/4547) Sort the config parameters before printing them
+
+[4546](https://github.com/ARMmbed/mbed-os/pull/4546) Fix bad test print, and move locks for `printf` into macro
+
+[4599](https://github.com/ARMmbed/mbed-os/pull/4599) Update timing tests to be robust
+
+[4720](https://github.com/ARMmbed/mbed-os/pull/4720) FlashIAP: Add explicit read function to `flash_api.h`
+
+[4525](https://github.com/ARMmbed/mbed-os/pull/4525) Improve the startup code on the STM32F070
+
+[4561](https://github.com/ARMmbed/mbed-os/pull/4561) fatfs: Add full support for multiple fs volume prefixes
+
+[4674](https://github.com/ARMmbed/mbed-os/pull/4674) Fix LED4 for `UBLOX_EVK_NINA_B1`
+
+[4749](https://github.com/ARMmbed/mbed-os/pull/4749) Tools: Fix toolchain extend `inc_paths`
+
+[4747](https://github.com/ARMmbed/mbed-os/pull/4747) Remove unused header files includes for `REALTEK_RTL8195AM`
+
+[4736](https://github.com/ARMmbed/mbed-os/pull/4736) NRF52832: Extend idle thread stack size to 512 bytes
+
+[4707](https://github.com/ARMmbed/mbed-os/pull/4707) STM32: serial: Use proper macro to check  interrupt
+
+[4699](https://github.com/ARMmbed/mbed-os/pull/4699) STM32L0: internal ADC channels
+
+[4694](https://github.com/ARMmbed/mbed-os/pull/4694) DISCO_L475VG_IOT01A: Correct typos in `PeripheralPins.c`
+
+[4693](https://github.com/ARMmbed/mbed-os/pull/4693) Nordic: Fix multiple defined symbol
+
+[4691](https://github.com/ARMmbed/mbed-os/pull/4691) STM32: F4: Increase ADC sampling time for VBAT
+
+[4677](https://github.com/ARMmbed/mbed-os/pull/4677) Increase default PPP stack size from 512 bytes to 768 bytes
+
+[4668](https://github.com/ARMmbed/mbed-os/pull/4668) DISCO/NUCLEO_F429ZI: Enable all alternate functions and pins
+
+[4667](https://github.com/ARMmbed/mbed-os/pull/4667) Update and mute debug messages of `REALTEK_TRL8195AM`
+
+[4666](https://github.com/ARMmbed/mbed-os/pull/4666) Fix timing issues in "Flash - clock and cache test"
+
+[4652](https://github.com/ARMmbed/mbed-os/pull/4652) fatfs: Fix unaligned access in `disk_ioctl`
+
+[4592](https://github.com/ARMmbed/mbed-os/pull/4592) [ONME-3089] - Adjust lowpan ND interface connect timeout
+
+[4634](https://github.com/ARMmbed/mbed-os/pull/4634) Fix NRF52 support of simultaneous use of I2C and SPI
+
+[4725](https://github.com/ARMmbed/mbed-os/pull/4725) Parse and use custom targets in exporters
+
+You can fetch this release from the [`mbed-os` GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.5.3".
+
+Please feel free to ask any questions or provide feedback on this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
 ## mbed OS 5.5.2 release
+
 We are pleased to announce the [mbed OS 5.5.2 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.5.2) is now available.
 
 This release includes new target support for DISCO_F413ZH and VBLUno51 and an update for the STM32F7 cube from v1.6.0 to v1.7.0. It also includes SHA256 and SHA1 hardware acceleration support for NUCLEO_F439ZI, USB Device for DISCO_L072CZ_LRWAN1, plus fixes to mbed OS and tools to improve stability and functionality. 
