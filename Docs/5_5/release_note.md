@@ -1,5 +1,114 @@
 # mbed OS 5.5 Releases
 
+## mbed OS 5.5.4 release
+We are pleased to announce the [mbed OS 5.5.4 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.5.4) is now available.
+
+This release includes 3 new targets LPCXpresso54114, LPCXpresso54608 and VBLUno52.
+
+### Known Issues
+
+The following list of known issues apply to this release:
+
+### Ports for Upcoming Targets
+
+[4290](https://github.com/ARMmbed/mbed-os/pull/4290) Add mbed support for LPCXpresso54114 and LPCXpresso54608 boards
+
+[4765](https://github.com/ARMmbed/mbed-os/pull/4765) Add support for the VBLUno52 board
+
+### Fixes and Changes
+
+[4620](https://github.com/ARMmbed/mbed-os/pull/4620) Extend tests for RTOS Thread class
+
+[4640](https://github.com/ARMmbed/mbed-os/pull/4640) STM32L1: Flash API and xDot bootloader support
+
+[4664](https://github.com/ARMmbed/mbed-os/pull/4664) STM32: Fix the CAN initializing to the wrong frequency
+
+[4676](https://github.com/ARMmbed/mbed-os/pull/4676) Correctly enable/disable InterruptIn Edges detection
+
+[4682](https://github.com/ARMmbed/mbed-os/pull/4682) Test: RTOS: Semaphore: Rework tests
+
+[4687](https://github.com/ARMmbed/mbed-os/pull/4687) STM: Cleanup `mbed_rtx.h` file
+
+[4708](https://github.com/ARMmbed/mbed-os/pull/4708) Enable greentea testing on CM3DS_MPS2 target
+
+[4733](https://github.com/ARMmbed/mbed-os/pull/4733) Prevent double define in very old builds
+
+[4718](https://github.com/ARMmbed/mbed-os/pull/4718) Toolchain: Add a note about weak functions and header files
+
+[4732](https://github.com/ARMmbed/mbed-os/pull/4732) Correct DAC pin assignment
+
+[4727](https://github.com/ARMmbed/mbed-os/pull/4727) Update UART3 pins for UBLOX_C030 platform
+
+[4745](https://github.com/ARMmbed/mbed-os/pull/4745) WIZnet W7500*: Remove support for RTC
+
+[4751](https://github.com/ARMmbed/mbed-os/pull/4751) Remove redundant ODIN-W2 target folder
+
+[4662](https://github.com/ARMmbed/mbed-os/pull/4662) BLE/HRM: Fix #4661
+
+[4740](https://github.com/ARMmbed/mbed-os/pull/4740) STM32: Clock source selection in json config file (PR2)
+
+[4696](https://github.com/ARMmbed/mbed-os/pull/4696) Max32630 UART: Fix IRQ dispatching and CTS/RTS line configuration
+
+[4615](https://github.com/ARMmbed/mbed-os/pull/4615) Add `set_baud()` method to `UARTSerial()`.
+
+[4706](https://github.com/ARMmbed/mbed-os/pull/4706) Fix inconsistent `mbed-trace` dummy defines and original function declarations
+
+[4721](https://github.com/ARMmbed/mbed-os/pull/4721) REALTEK_RTL8195AM: FlashIAP read and address scope
+
+[4717](https://github.com/ARMmbed/mbed-os/pull/4717) STM32: Remove `i2c_read()` and `i2c_write()` redirects to `HAL_I2C_IsDeviceReady()`
+
+[4726](https://github.com/ARMmbed/mbed-os/pull/4726) Update ATCmdParser example code
+
+[4731](https://github.com/ARMmbed/mbed-os/pull/4731) Boot: Make ARMC library mutexes dynamic
+
+[4734](https://github.com/ARMmbed/mbed-os/pull/4734) Avoid data loss with serial interrupt used at high baudrates 
+
+[4754](https://github.com/ARMmbed/mbed-os/pull/4754) Resolve TLS handshake failing issue for REALTEK_RTL8195AM
+
+[4756](https://github.com/ARMmbed/mbed-os/pull/4756) Fix #4613: Remove duplicated startup files for MICRONFCBOARD
+
+[4762](https://github.com/ARMmbed/mbed-os/pull/4762) DISCO_L475VG_IOT: pin update
+
+[4764](https://github.com/ARMmbed/mbed-os/pull/4764) STM32F0: Remove unavailable pins
+
+[4774](https://github.com/ARMmbed/mbed-os/pull/4774) Add support for runtime test specification
+
+[4775](https://github.com/ARMmbed/mbed-os/pull/4775) Fix nonportable defines
+
+[4778](https://github.com/ARMmbed/mbed-os/pull/4778) Add AES HW encryption for NUCLEO_F756ZG in `mbedtls`
+
+[4782](https://github.com/ARMmbed/mbed-os/pull/4782) mbed-hal: Fix flash test
+
+[4793](https://github.com/ARMmbed/mbed-os/pull/4793) STM32 I2C: Correct async issue
+
+[4794](https://github.com/ARMmbed/mbed-os/pull/4794) NUCLEO_F767ZI: Boot issue with GCC
+
+[4714](https://github.com/ARMmbed/mbed-os/pull/4714) Expose SystemCoreClock via `cmsis.h` to support new CMSIS/RTX
+
+[4744](https://github.com/ARMmbed/mbed-os/pull/4744) Allow user to set default transfer byte for block read
+
+[4807](https://github.com/ARMmbed/mbed-os/pull/4807) LPC MCUXpresso: Fix `write_fill` argument for block write function
+
+[4742](https://github.com/ARMmbed/mbed-os/pull/4742) Deprecate unsupported exporters
+
+[4729](https://github.com/ARMmbed/mbed-os/pull/4729) RTOS: Mutex: Rework tests
+
+[4715](https://github.com/ARMmbed/mbed-os/pull/4715) Nanostack+mbed-client libservice update
+
+[4738](https://github.com/ARMmbed/mbed-os/pull/4738) ONME-3113: Fix GCC_ARM and ARM compiler warnings from `mbed-mesh-api`
+
+[4755](https://github.com/ARMmbed/mbed-os/pull/4755) Bluepill: hse config fix
+
+[4790](https://github.com/ARMmbed/mbed-os/pull/4790) Improve documentation for memory stat ops
+
+[4800](https://github.com/ARMmbed/mbed-os/pull/4800) Fix infinite calling loop
+
+[4804](https://github.com/ARMmbed/mbed-os/pull/4804) Copy static files only
+
+You can fetch this release from the [`mbed-os` GitHub](https://github.com/ARMmbed/mbed-os) repository, using the tag "mbed-os-5.5.4".
+
+Please feel free to ask any questions or provide feedback about this release [on the forum](https://forums.mbed.com/), or to contact us at [support@mbed.org](mailto:support@mbed.org).
+
 ## mbed OS 5.5.3 release
 
 We are pleased to announce the [mbed OS 5.5.3 release](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.5.3) is now available. This release includes bug fixes that improve the stability of the tools and codebase.
